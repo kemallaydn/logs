@@ -1,0 +1,202 @@
+2025-01-28T13:58:53,143 INFO   --- [main] org.hibernate.jpa.internal.util.LogHelper(LogHelper.java:31) : HHH000204: Processing PersistenceUnitInfo [name: myPersistenceUnit]
+2025-01-28T13:58:53,175 INFO   --- [main] org.hibernate.Version(Version.java:44) : HHH000412: Hibernate ORM core version 6.2.7.Final
+2025-01-28T13:58:53,176 INFO   --- [main] org.hibernate.cfg.Environment(Environment.java:191) : HHH000406: Using bytecode reflection optimizer
+2025-01-28T13:58:53,178 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:690) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.user], use [jakarta.persistence.jdbc.user] instead
+2025-01-28T13:58:53,179 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:712) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.password], use [jakarta.persistence.jdbc.password] instead
+2025-01-28T13:58:53,179 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:1027) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.url], use [jakarta.persistence.jdbc.url] instead
+2025-01-28T13:58:53,179 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:1034) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.driver], use [jakarta.persistence.jdbc.driver] instead
+2025-01-28T13:58:53,554 INFO   --- [main] org.hibernate.bytecode.internal.BytecodeProviderInitiator(BytecodeProviderInitiator.java:53) : HHH000021: Bytecode provider name : bytebuddy
+2025-01-28T13:58:54,014 WARN   --- [main] org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator(ConnectionProviderInitiator.java:297) : HHH000472: Hikari properties were encountered, but the Hikari ConnectionProvider was not found on the classpath; these properties are going to be ignored.
+2025-01-28T13:58:54,015 WARN   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:80) : HHH10001002: Using built-in connection pool (not intended for production use)
+2025-01-28T13:58:54,018 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:139) : HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-01-28T13:58:54,018 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:161) : HHH10001012: Connecting with JDBC URL [jdbc:postgresql://54.194.164.71:5432/swapiffy]
+2025-01-28T13:58:54,018 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:170) : HHH10001001: Connection properties: {password=****, user=Kemal}
+2025-01-28T13:58:54,018 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:174) : HHH10001003: Autocommit mode: false
+2025-01-28T13:58:54,019 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:366) : HHH10001115: Connection pool size: 20 (min=1)
+2025-01-28T13:58:54,627 INFO   --- [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator(JtaPlatformInitiator.java:51) : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-28T13:58:54,914 INFO   --- [main] org.hibernate.orm.connections.access(DdlTransactionIsolatorNonJtaImpl.java:52) : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1638fa8b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-01-28T13:59:04,235 INFO   --- [main] com.SwapifyBe.dao.category.CategoryDaoImpl(CategoryDaoImpl.java:18) : Initializing CategoryDaoImpl
+2025-01-28T13:59:05,453 INFO   --- [main] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:21) : Initializing ConfigurationDaoImpl
+2025-01-28T13:59:05,454 INFO   --- [main] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:23) : ConfigurationService created
+2025-01-28T13:59:05,455 INFO   --- [main] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-01-28T13:59:05,455 INFO   --- [main] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-01-28T13:59:08,273 INFO   --- [main] com.SwapifyBe.dao.auth.AuthDaoImpl(AuthDaoImpl.java:16) : Initializing AuthDaoImpl
+2025-01-28T13:59:08,296 INFO   --- [main] com.SwapifyBe.dao.advertisement.AdvertisementDaoImpl(AdvertisementDaoImpl.java:23) : Advertisement dao implementation is initializing
+2025-01-28T13:59:08,297 INFO   --- [main] com.SwapifyBe.dao.favorite.FavoritesDaoImpl(FavoritesDaoImpl.java:20) : Favorites dao implementation is initializing
+2025-01-28T13:59:08,299 INFO   --- [main] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:20) : Offer dao implementation is initializing
+2025-01-28T13:59:08,299 INFO   --- [main] com.SwapifyBe.dao.follower.FollowerDaoImpl(FollowerDaoImpl.java:20) : Followers dao implementation is initializing
+2025-01-28T13:59:08,300 INFO   --- [main] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:21) : User dao implementation is initializing
+2025-01-28T13:59:08,301 INFO   --- [main] com.SwapifyBe.dao.message.MessageDaoImpl(MessageDaoImpl.java:19) : Message dao implementation is initializing
+2025-01-28T13:59:08,305 INFO   --- [main] com.SwapifyBe.dao.user.UserDaoImpl(UserChatDaoImpl.java:20) : UserChatDaoImpl  implementation is initializing
+2025-01-28T13:59:08,312 INFO   --- [main] com.SwapifyBe.notification.PushMessage(PushMessage.java:51) : FirebaseApp initializing...
+2025-01-28T13:59:08,402 INFO   --- [main] com.SwapifyBe.notification.PushMessage(PushMessage.java:65) : FirebaseApp initialized
+2025-01-28T13:59:08,403 INFO   --- [main] com.SwapifyBe.service.NotificationService(NotificationService.java:25) : Initializing NotificationService
+2025-01-28T13:59:08,403 INFO   --- [main] com.SwapifyBe.service.SmsService(SmsService.java:33) : SmsService created
+2025-01-28T13:59:08,404 INFO   --- [main] com.SwapifyBe.service.CategoryService(CategoryService.java:19) : CategoryService created
+2025-01-28T13:59:08,413 INFO   --- [main] com.SwapifyBe.service.UserPermissionsService(UserPermissionsService.java:23) : UserPermissionsService created
+2025-01-28T13:59:08,421 INFO   --- [main] com.SwapifyBe.service.UserService(UserService.java:41) : Initializing UserService
+2025-01-28T13:59:08,426 INFO   --- [main] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:58) : Initializing AdvertisementService
+2025-01-28T13:59:08,428 INFO   --- [main] com.SwapifyBe.service.AuthService(AuthService.java:49) : Initializing AuthService
+2025-01-28T13:59:08,429 INFO   --- [main] com.SwapifyBe.service.FavoriteService(FavoriteService.java:37) : Initializing FavoriteService
+2025-01-28T13:59:08,432 INFO   --- [main] com.SwapifyBe.service.OfferService(OfferService.java:56) : Initializing OfferService
+2025-01-28T13:59:08,433 INFO   --- [main] com.SwapifyBe.service.MessageResendService(MessageResendService.java:25) : MessageResendService created
+2025-01-28T13:59:08,435 INFO   --- [main] com.SwapifyBe.service.AppLogService(AppLogService.java:49) : AppLogService created
+2025-01-28T13:59:08,436 INFO   --- [main] com.SwapifyBe.service.VideoService(VideoService.java:19) : Video Service created
+2025-01-28T13:59:08,436 INFO   --- [main] com.SwapifyBe.service.TokenService(TokenService.java:28) : Token Service created
+2025-01-28T13:59:08,437 INFO   --- [main] com.SwapifyBe.service.MessageService(MessageService.java:48) : MessageService created
+2025-01-28T13:59:08,441 INFO   --- [main] com.SwapifyBe.service.FollowerService(FollowerService.java:47) : FollowerService created
+2025-01-28T13:59:08,442 INFO   --- [main] com.SwapifyBe.service.OfferService(SearchService.java:28) : Initializing SearchService
+2025-01-28T13:59:08,446 INFO   --- [main] com.SwapifyBe.service.SubscriptionService(SubscriptionService.java:42) : SubscriptionService created
+2025-01-28T13:59:08,446 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:40) : Services started successfully
+2025-01-28T13:59:08,662 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(StartupInfoLogger.java:50) : Starting SwapifyBeApplication using Java 17.0.12 with PID 53493 (/Users/furkanaydin/Projeler/Backend/SwapifyBe/target/classes started by furkanaydin in /Users/furkanaydin/Projeler/Backend/SwapifyBe)
+2025-01-28T13:59:08,663 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SpringApplication.java:654) : No active profile set, falling back to 1 default profile: "default"
+2025-01-28T13:59:09,490 INFO   --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer(TomcatWebServer.java:109) : Tomcat initialized with port 8080 (http)
+2025-01-28T13:59:09,497 INFO   --- [main] org.apache.coyote.http11.Http11NioProtocol(DirectJDKLog.java:173) : Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-28T13:59:09,498 INFO   --- [main] org.apache.catalina.core.StandardService(DirectJDKLog.java:173) : Starting service [Tomcat]
+2025-01-28T13:59:09,498 INFO   --- [main] org.apache.catalina.core.StandardEngine(DirectJDKLog.java:173) : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-01-28T13:59:09,527 INFO   --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](DirectJDKLog.java:173) : Initializing Spring embedded WebApplicationContext
+2025-01-28T13:59:09,527 INFO   --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(ServletWebServerApplicationContext.java:296) : Root WebApplicationContext: initialization completed in 848 ms
+2025-01-28T13:59:09,700 INFO   --- [main] com.SwapifyBe.controller.AppLogController(AppLogController.java:28) : AppLogController created
+2025-01-28T13:59:09,712 INFO   --- [main] com.SwapifyBe.controller.CategoryController(CategoryController.java:26) : CategoryController created
+2025-01-28T13:59:09,713 INFO   --- [main] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:22) : ConfigurationController created
+2025-01-28T13:59:09,716 INFO   --- [main] com.SwapifyBe.controller.FavoriteController(FavoriteController.java:30) : FavoriteController created
+2025-01-28T13:59:09,721 INFO   --- [main] com.SwapifyBe.controller.FollowerController(FollowerController.java:20) : FollowerController created
+2025-01-28T13:59:09,721 INFO   --- [main] com.SwapifyBe.service.FollowerService(FollowerService.java:47) : FollowerService created
+2025-01-28T13:59:09,723 INFO   --- [main] com.SwapifyBe.controller.MessageController(MessageController.java:28) : Message Controller created
+2025-01-28T13:59:09,724 INFO   --- [main] com.SwapifyBe.controller.NotificationController(NotificationController.java:22) : NotificationController created
+2025-01-28T13:59:09,724 INFO   --- [main] com.SwapifyBe.controller.OfferController(OfferController.java:25) : OfferController initialized
+2025-01-28T13:59:09,725 INFO   --- [main] com.SwapifyBe.controller.PaymentController(PaymentController.java:22) : Payment Controller created
+2025-01-28T13:59:09,726 INFO   --- [main] com.SwapifyBe.controller.SearchController(SearchController.java:23) : SearchController created
+2025-01-28T13:59:09,726 INFO   --- [main] com.SwapifyBe.controller.SubscriptionController(SubscriptionController.java:41) : SubscriptionController created
+2025-01-28T13:59:09,727 INFO   --- [main] com.SwapifyBe.controller.TokenController(TokenController.java:24) : Token Controller created
+2025-01-28T13:59:09,734 INFO   --- [main] com.SwapifyBe.controller.UserController(UserController.java:29) : UserController created
+2025-01-28T13:59:09,735 INFO   --- [main] com.SwapifyBe.controller.VideoController(VideoController.java:22) : Video Controller created
+2025-01-28T13:59:09,927 INFO   --- [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(WelcomePageHandlerMapping.java:59) : Adding welcome page: class path resource [static/index.html]
+2025-01-28T13:59:10,092 INFO   --- [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(EndpointLinksResolver.java:58) : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-28T13:59:10,135 INFO   --- [main] org.springframework.security.web.DefaultSecurityFilterChain(DefaultSecurityFilterChain.java:54) : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73090cd8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@732b3b00, org.springframework.security.web.context.SecurityContextHolderFilter@6bf994a6, org.springframework.security.web.header.HeaderWriterFilter@1fd21ca0, org.springframework.web.filter.CorsFilter@3446bba2, org.springframework.security.web.authentication.logout.LogoutFilter@6ed91d1d, com.SwapifyBe.filter.JwtAuthenticationFilter@5193cb13, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7548f7cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f750dea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@486765f1, org.springframework.security.web.session.SessionManagementFilter@116e349d, org.springframework.security.web.access.ExceptionTranslationFilter@672f5697, org.springframework.security.web.access.intercept.AuthorizationFilter@1dd1a777]
+2025-01-28T13:59:10,477 INFO   --- [main] org.apache.coyote.http11.Http11NioProtocol(DirectJDKLog.java:173) : Starting ProtocolHandler ["http-nio-8080"]
+2025-01-28T13:59:10,483 INFO   --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer(TomcatWebServer.java:241) : Tomcat started on port 8080 (http) with context path ''
+2025-01-28T13:59:10,511 INFO   --- [main] org.apache.kafka.clients.consumer.ConsumerConfig(AbstractConfig.java:370) : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-my-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = my-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-01-28T13:59:10,557 INFO   --- [main] org.apache.kafka.common.utils.AppInfoParser(AppInfoParser.java:119) : Kafka version: 3.6.2
+2025-01-28T13:59:10,557 INFO   --- [main] org.apache.kafka.common.utils.AppInfoParser(AppInfoParser.java:120) : Kafka commitId: c4deed513057c94e
+2025-01-28T13:59:10,557 INFO   --- [main] org.apache.kafka.common.utils.AppInfoParser(AppInfoParser.java:121) : Kafka startTimeMs: 1738061950555
+2025-01-28T13:59:10,559 INFO   --- [main] org.springframework.kafka.core.DefaultKafkaConsumerFactory$ExtendedKafkaConsumer(KafkaConsumer.java:912) : [Consumer clientId=consumer-my-group-1, groupId=my-group] Subscribed to topic(s): my-topic
+2025-01-28T13:59:10,562 INFO   --- [main] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler(CompositeLog.java:117) : Starting...
+2025-01-28T13:59:10,563 INFO   --- [main] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler(CompositeLog.java:117) : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5c361c58]]
+2025-01-28T13:59:10,563 INFO   --- [main] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler(CompositeLog.java:117) : Started.
+2025-01-28T13:59:10,573 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(StartupInfoLogger.java:56) : Started SwapifyBeApplication in 2.088 seconds (process running for 18.364)
+2025-01-28T13:59:10,575 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:63) : Application started event
+2025-01-28T13:59:10,577 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:53) : Application ready event
+2025-01-28T13:59:10,833 INFO   --- [RMI TCP Connection(2)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](DirectJDKLog.java:173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-28T13:59:10,834 INFO   --- [RMI TCP Connection(2)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet(FrameworkServlet.java:532) : Initializing Servlet 'dispatcherServlet'
+2025-01-28T13:59:10,835 INFO   --- [RMI TCP Connection(2)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet(FrameworkServlet.java:554) : Completed initialization in 1 ms
+2025-01-28T13:59:10,959 WARN   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient(NetworkClient.java:1145) : [Consumer clientId=consumer-my-group-1, groupId=my-group] Error while fetching metadata with correlation id 2 : {my-topic=LEADER_NOT_AVAILABLE}
+2025-01-28T13:59:10,961 INFO   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata(Metadata.java:294) : [Consumer clientId=consumer-my-group-1, groupId=my-group] Cluster ID: LjHNA_tUStamnBR3noRVwA
+2025-01-28T13:59:11,089 WARN   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient(NetworkClient.java:1145) : [Consumer clientId=consumer-my-group-1, groupId=my-group] Error while fetching metadata with correlation id 4 : {my-topic=LEADER_NOT_AVAILABLE}
+2025-01-28T13:59:11,426 INFO   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator(AbstractCoordinator.java:906) : [Consumer clientId=consumer-my-group-1, groupId=my-group] Discovered group coordinator 192.168.1.103:9092 (id: 2147482644 rack: null)
+2025-01-28T13:59:11,428 INFO   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator(AbstractCoordinator.java:576) : [Consumer clientId=consumer-my-group-1, groupId=my-group] (Re-)joining group
+2025-01-28T13:59:11,445 INFO   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator(AbstractCoordinator.java:1072) : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: need to re-join with the given member-id: consumer-my-group-1-75c79f2e-e781-459e-b7bb-c3892b861fa8
+2025-01-28T13:59:11,445 INFO   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator(AbstractCoordinator.java:1072) : [Consumer clientId=consumer-my-group-1, groupId=my-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-01-28T13:59:11,446 INFO   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator(AbstractCoordinator.java:576) : [Consumer clientId=consumer-my-group-1, groupId=my-group] (Re-)joining group
+2025-01-28T13:59:11,457 INFO   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator(AbstractCoordinator.java:637) : [Consumer clientId=consumer-my-group-1, groupId=my-group] Successfully joined group with generation Generation{generationId=1, memberId='consumer-my-group-1-75c79f2e-e781-459e-b7bb-c3892b861fa8', protocol='range'}
+2025-01-28T13:59:11,460 INFO   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator(ConsumerCoordinator.java:717) : [Consumer clientId=consumer-my-group-1, groupId=my-group] Finished assignment for group at generation 1: {consumer-my-group-1-75c79f2e-e781-459e-b7bb-c3892b861fa8=Assignment(partitions=[my-topic-0])}
+2025-01-28T13:59:11,492 INFO   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator(AbstractCoordinator.java:812) : [Consumer clientId=consumer-my-group-1, groupId=my-group] Successfully synced group in generation Generation{generationId=1, memberId='consumer-my-group-1-75c79f2e-e781-459e-b7bb-c3892b861fa8', protocol='range'}
+2025-01-28T13:59:11,492 INFO   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator(ConsumerCoordinator.java:312) : [Consumer clientId=consumer-my-group-1, groupId=my-group] Notifying assignor about the new Assignment(partitions=[my-topic-0])
+2025-01-28T13:59:11,493 INFO   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator(ConsumerCoordinator.java:324) : [Consumer clientId=consumer-my-group-1, groupId=my-group] Adding newly assigned partitions: my-topic-0
+2025-01-28T13:59:11,499 INFO   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator(ConsumerCoordinator.java:1578) : [Consumer clientId=consumer-my-group-1, groupId=my-group] Found no committed offset for partition my-topic-0
+2025-01-28T13:59:11,504 INFO   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.ConsumerCoordinator(ConsumerCoordinator.java:1578) : [Consumer clientId=consumer-my-group-1, groupId=my-group] Found no committed offset for partition my-topic-0
+2025-01-28T13:59:11,517 INFO   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.consumer.internals.SubscriptionState(SubscriptionState.java:398) : [Consumer clientId=consumer-my-group-1, groupId=my-group] Resetting offset for partition my-topic-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.1.103:9092 (id: 1003 rack: null)], epoch=0}}.
+2025-01-28T13:59:11,529 INFO   --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.springframework.kafka.listener.KafkaMessageListenerContainer(LogAccessor.java:292) : my-group: partitions assigned: [my-topic-0]
