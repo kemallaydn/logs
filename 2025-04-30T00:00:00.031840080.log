@@ -1,0 +1,279 @@
+2025-04-29T15:27:36,167 INFO   --- [main] org.hibernate.jpa.internal.util.LogHelper(LogHelper.java:31) : HHH000204: Processing PersistenceUnitInfo [name: myPersistenceUnit]
+2025-04-29T15:27:36,394 INFO   --- [main] org.hibernate.Version(Version.java:44) : HHH000412: Hibernate ORM core version 6.2.7.Final
+2025-04-29T15:27:36,404 INFO   --- [main] org.hibernate.cfg.Environment(Environment.java:191) : HHH000406: Using bytecode reflection optimizer
+2025-04-29T15:27:36,411 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:690) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.user], use [jakarta.persistence.jdbc.user] instead
+2025-04-29T15:27:36,416 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:712) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.password], use [jakarta.persistence.jdbc.password] instead
+2025-04-29T15:27:36,424 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:1027) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.url], use [jakarta.persistence.jdbc.url] instead
+2025-04-29T15:27:36,425 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:1034) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.driver], use [jakarta.persistence.jdbc.driver] instead
+2025-04-29T15:27:39,541 INFO   --- [main] org.hibernate.bytecode.internal.BytecodeProviderInitiator(BytecodeProviderInitiator.java:53) : HHH000021: Bytecode provider name : bytebuddy
+2025-04-29T15:27:41,794 WARN   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:80) : HHH10001002: Using built-in connection pool (not intended for production use)
+2025-04-29T15:27:41,799 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:139) : HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-04-29T15:27:41,804 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:161) : HHH10001012: Connecting with JDBC URL [jdbc:postgresql://34.245.38.121:5432/swapiffy]
+2025-04-29T15:27:41,805 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:170) : HHH10001001: Connection properties: {password=****, user=Kemal}
+2025-04-29T15:27:41,806 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:174) : HHH10001003: Autocommit mode: false
+2025-04-29T15:27:41,807 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:366) : HHH10001115: Connection pool size: 20 (min=1)
+2025-04-29T15:27:42,408 INFO   --- [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator(JtaPlatformInitiator.java:51) : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-29T15:27:43,966 INFO   --- [main] org.hibernate.orm.connections.access(DdlTransactionIsolatorNonJtaImpl.java:52) : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4ea4e0f3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-04-29T15:27:44,367 INFO   --- [main] com.SwapifyBe.dao.category.CategoryDaoImpl(CategoryDaoImpl.java:18) : Initializing CategoryDaoImpl
+2025-04-29T15:27:44,663 INFO   --- [main] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:21) : Initializing ConfigurationDaoImpl
+2025-04-29T15:27:44,665 INFO   --- [main] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:23) : ConfigurationService created
+2025-04-29T15:27:44,665 INFO   --- [main] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-04-29T15:27:44,665 INFO   --- [main] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-04-29T15:27:51,351 INFO   --- [main] com.SwapifyBe.dao.auth.AuthDaoImpl(AuthDaoImpl.java:16) : Initializing AuthDaoImpl
+2025-04-29T15:27:51,353 INFO   --- [main] com.SwapifyBe.dao.advertisement.AdvertisementDaoImpl(AdvertisementDaoImpl.java:23) : Advertisement dao implementation is initializing
+2025-04-29T15:27:51,366 INFO   --- [main] com.SwapifyBe.dao.favorite.FavoritesDaoImpl(FavoritesDaoImpl.java:20) : Favorites dao implementation is initializing
+2025-04-29T15:27:51,367 INFO   --- [main] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:20) : Offer dao implementation is initializing
+2025-04-29T15:27:51,372 INFO   --- [main] com.SwapifyBe.dao.follower.FollowerDaoImpl(FollowerDaoImpl.java:20) : Followers dao implementation is initializing
+2025-04-29T15:27:51,373 INFO   --- [main] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:21) : User dao implementation is initializing
+2025-04-29T15:27:51,374 INFO   --- [main] com.SwapifyBe.dao.message.MessageDaoImpl(MessageDaoImpl.java:19) : Message dao implementation is initializing
+2025-04-29T15:27:51,381 INFO   --- [main] com.SwapifyBe.dao.user.UserDaoImpl(UserChatDaoImpl.java:20) : UserChatDaoImpl  implementation is initializing
+2025-04-29T15:27:51,387 INFO   --- [main] com.SwapifyBe.notification.PushMessage(PushMessage.java:54) : FirebaseApp initializing...
+2025-04-29T15:27:52,007 INFO   --- [main] com.SwapifyBe.notification.PushMessage(PushMessage.java:68) : FirebaseApp initialized
+2025-04-29T15:27:52,011 INFO   --- [main] com.SwapifyBe.service.NotificationService(NotificationService.java:25) : Initializing NotificationService
+2025-04-29T15:27:52,017 INFO   --- [main] com.SwapifyBe.service.SmsService(SmsService.java:33) : SmsService created
+2025-04-29T15:27:52,023 INFO   --- [main] com.SwapifyBe.service.CategoryService(CategoryService.java:19) : CategoryService created
+2025-04-29T15:27:52,082 INFO   --- [main] com.SwapifyBe.service.UserPermissionsService(UserPermissionsService.java:23) : UserPermissionsService created
+2025-04-29T15:27:52,088 INFO   --- [main] com.SwapifyBe.service.UserService(UserService.java:41) : Initializing UserService
+2025-04-29T15:27:52,093 INFO   --- [main] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:64) : Initializing AdvertisementService
+2025-04-29T15:27:52,115 INFO   --- [main] com.SwapifyBe.service.AuthService(AuthService.java:49) : Initializing AuthService
+2025-04-29T15:27:52,119 INFO   --- [main] com.SwapifyBe.service.FavoriteService(FavoriteService.java:37) : Initializing FavoriteService
+2025-04-29T15:27:52,121 INFO   --- [main] com.SwapifyBe.service.OfferService(OfferService.java:56) : Initializing OfferService
+2025-04-29T15:27:52,122 INFO   --- [main] com.SwapifyBe.service.MessageResendService(MessageResendService.java:25) : MessageResendService created
+2025-04-29T15:27:52,122 INFO   --- [main] com.SwapifyBe.service.AppLogService(AppLogService.java:49) : AppLogService created
+2025-04-29T15:27:52,127 INFO   --- [main] com.SwapifyBe.service.VideoService(VideoService.java:19) : Video Service created
+2025-04-29T15:27:52,128 INFO   --- [main] com.SwapifyBe.service.TokenService(TokenService.java:28) : Token Service created
+2025-04-29T15:27:52,133 INFO   --- [main] com.SwapifyBe.service.MessageService(MessageService.java:48) : MessageService created
+2025-04-29T15:27:52,136 INFO   --- [main] com.SwapifyBe.service.FollowerService(FollowerService.java:47) : FollowerService created
+2025-04-29T15:27:52,143 INFO   --- [main] com.SwapifyBe.service.OfferService(SearchService.java:28) : Initializing SearchService
+2025-04-29T15:27:52,145 INFO   --- [main] com.SwapifyBe.service.SubscriptionService(SubscriptionService.java:42) : SubscriptionService created
+2025-04-29T15:27:52,145 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:48) : Services started successfully
+2025-04-29T15:27:53,232 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(StartupInfoLogger.java:53) : Starting SwapifyBeApplication v0.0.1-SNAPSHOT using Java 17.0.15 with PID 1 (/app/app.jar started by root in /app)
+2025-04-29T15:27:53,244 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SpringApplication.java:652) : No active profile set, falling back to 1 default profile: "default"
+2025-04-29T15:27:57,845 INFO   --- [main] org.apache.coyote.http11.Http11NioProtocol(DirectJDKLog.java:173) : Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-29T15:27:57,847 INFO   --- [main] org.apache.catalina.core.StandardService(DirectJDKLog.java:173) : Starting service [Tomcat]
+2025-04-29T15:27:57,849 INFO   --- [main] org.apache.catalina.core.StandardEngine(DirectJDKLog.java:173) : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-29T15:27:57,978 INFO   --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](DirectJDKLog.java:173) : Initializing Spring embedded WebApplicationContext
+2025-04-29T15:27:59,046 INFO   --- [main] com.SwapifyBe.controller.AppLogController(AppLogController.java:28) : AppLogController created
+2025-04-29T15:27:59,087 INFO   --- [main] com.SwapifyBe.controller.CategoryController(CategoryController.java:26) : CategoryController created
+2025-04-29T15:27:59,088 INFO   --- [main] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:22) : ConfigurationController created
+2025-04-29T15:27:59,100 INFO   --- [main] com.SwapifyBe.controller.FavoriteController(FavoriteController.java:30) : FavoriteController created
+2025-04-29T15:27:59,108 INFO   --- [main] com.SwapifyBe.controller.FollowerController(FollowerController.java:20) : FollowerController created
+2025-04-29T15:27:59,109 INFO   --- [main] com.SwapifyBe.service.FollowerService(FollowerService.java:47) : FollowerService created
+2025-04-29T15:27:59,116 INFO   --- [main] com.SwapifyBe.controller.MessageController(MessageController.java:28) : Message Controller created
+2025-04-29T15:27:59,117 INFO   --- [main] com.SwapifyBe.controller.NotificationController(NotificationController.java:22) : NotificationController created
+2025-04-29T15:27:59,119 INFO   --- [main] com.SwapifyBe.controller.OfferController(OfferController.java:25) : OfferController initialized
+2025-04-29T15:27:59,127 INFO   --- [main] com.SwapifyBe.controller.PaymentController(PaymentController.java:22) : Payment Controller created
+2025-04-29T15:27:59,128 INFO   --- [main] com.SwapifyBe.controller.SearchController(SearchController.java:23) : SearchController created
+2025-04-29T15:27:59,130 INFO   --- [main] com.SwapifyBe.controller.SubscriptionController(SubscriptionController.java:41) : SubscriptionController created
+2025-04-29T15:27:59,145 INFO   --- [main] com.SwapifyBe.controller.TokenController(TokenController.java:24) : Token Controller created
+2025-04-29T15:27:59,147 INFO   --- [main] com.SwapifyBe.controller.UserController(UserController.java:32) : UserController created
+2025-04-29T15:27:59,150 INFO   --- [main] com.SwapifyBe.controller.VideoController(VideoController.java:22) : Video Controller created
+2025-04-29T15:28:02,577 INFO   --- [main] org.apache.coyote.http11.Http11NioProtocol(DirectJDKLog.java:173) : Starting ProtocolHandler ["http-nio-8080"]
+2025-04-29T15:28:02,665 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(StartupInfoLogger.java:59) : Started SwapifyBeApplication in 10.299 seconds (process running for 29.779)
+2025-04-29T15:28:02,677 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:71) : Application started event
+2025-04-29T15:28:02,680 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:61) : Application ready event
+2025-04-29T15:30:39,816 INFO   --- [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](DirectJDKLog.java:173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-29T15:30:39,979 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 95.70.243.184 && URI :/ws/info Request duration: 43ms
+2025-04-29T15:30:40,380 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 95.70.243.184 && URI :/ws/647/ekiyu5or/websocket Request duration: 89ms
+2025-04-29T15:30:40,657 INFO   --- [clientInboundChannel-1] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:82) : Saving user ID as active in Hazelcast: 23c8ee45-1b04-4bde-85e9-fd7ff74c33bc
+2025-04-29T15:30:40,690 INFO   --- [clientInboundChannel-1] com.hazelcast.internal.partition.impl.PartitionStateManager(StandardLoggerFactory.java:56) : [172.17.0.2]:5701 [dev] [5.3.7] Initializing cluster partition table arrangement...
+2025-04-29T15:30:40,849 INFO   --- [clientInboundChannel-1] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:103) : Saving user to Hazelcast: 23c8ee45-1b04-4bde-85e9-fd7ff74c33bc
+2025-04-29T15:30:40,853 INFO   --- [clientInboundChannel-1] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:106) : User saved to Hazelcast: 23c8ee45-1b04-4bde-85e9-fd7ff74c33bc
+2025-04-29T15:48:43,627 INFO   --- [http-nio-8080-exec-8] org.apache.coyote.http11.Http11Processor(DirectJDKLog.java:175) : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x010x0a0x010x000x010x060x030x030xd50x85|*0x8a0xc8m0xf70x850xc360x810xc80x1deN0xab0x05*0x10SIH?(]s0xbf0x930xc40xa10x11 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:409) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.36.jar!/:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-04-29T15:55:18,831 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 156.146.36.206 && URI :/ Request duration: 80ms
+2025-04-29T15:55:22,824 ERROR  --- [http-nio-8080-exec-2] com.SwapifyBe.exception.GlobalExceptionHandler(GlobalExceptionHandler.java:47) : Exception occurred at: uri=/static/js/main.4e416a8b.js
+2025-04-29T15:55:22,824 ERROR  --- [http-nio-8080-exec-2] com.SwapifyBe.exception.GlobalExceptionHandler(GlobalExceptionHandler.java:48) : Exception details: 
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: Broken pipe
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:346) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.connector.OutputBuffer.flushByteBuffer(OutputBuffer.java:781) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:678) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:381) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:359) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:102) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.springframework.security.web.util.OnCommittedResponseWrapper$SaveContextServletOutputStream.write(OnCommittedResponseWrapper.java:639) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at java.base/java.io.InputStream.transferTo(InputStream.java:783) ~[?:?]
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeContent(ResourceHttpMessageConverter.java:160) ~[spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeInternal(ResourceHttpMessageConverter.java:115) ~[spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeInternal(ResourceHttpMessageConverter.java:46) ~[spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235) ~[spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:621) ~[spring-webmvc-6.2.3.jar!/:6.2.3]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.2.3.jar!/:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar!/:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar!/:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar!/:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.3.jar!/:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar!/:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar!/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.2.3.jar!/:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at com.SwapifyBe.filter.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:42) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.3.jar!/:6.4.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.3.jar!/:6.2.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) [spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) [spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) [spring-security-config-6.4.3.jar!/:6.4.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) [spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) [spring-web-6.2.3.jar!/:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.3.jar!/:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.3.jar!/:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) [spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.3.jar!/:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-6.2.3.jar!/:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.3.jar!/:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.36.jar!/:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: java.io.IOException: Broken pipe
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:62) ~[?:?]
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132) ~[?:?]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:97) ~[?:?]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532) ~[?:?]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1380) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:589) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:533) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:548) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.coyote.http11.filters.IdentityOutputFilter.doWrite(IdentityOutputFilter.java:73) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:193) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.coyote.Response.doWrite(Response.java:631) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:334) ~[tomcat-embed-core-10.1.36.jar!/:?]
+	... 140 more
+2025-04-29T15:55:22,873 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 156.146.36.206 && URI :/static/js/main.4e416a8b.js Request duration: 727ms
+2025-04-29T16:02:30,051 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 45.79.8.221 && URI :/ Request duration: 20ms
+2025-04-29T16:59:38,372 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 66.249.79.36 && URI :/robots.txt Request duration: 5ms
+2025-04-29T16:59:38,689 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 66.249.79.32 && URI :/app-ads.txt Request duration: 10ms
+2025-04-29T17:01:03,420 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 35.82.31.94 && URI :/ Request duration: 19ms
+2025-04-29T19:07:40,747 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 20.14.73.63 && URI :/ Request duration: 4ms
+2025-04-29T20:29:48,950 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 45.156.129.57 && URI :/ Request duration: 11ms
+2025-04-29T20:44:12,624 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 162.158.48.188 && URI :/ Request duration: 4ms
+2025-04-29T20:46:15,542 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 18.222.124.31 && URI :/ Request duration: 4ms
+2025-04-29T20:59:38,938 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 66.249.79.36 && URI :/robots.txt Request duration: 13ms
+2025-04-29T20:59:39,247 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 66.249.79.37 && URI :/app-ads.txt Request duration: 2ms
+2025-04-29T22:00:44,816 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 20.65.194.58 && URI :/developmentserver/metadatauploader Request duration: 181ms
+2025-04-29T22:08:43,699 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 162.243.28.182 && URI :/.env Request duration: 48ms
+2025-04-29T22:08:43,879 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 162.243.28.182 && URI :/.git/config Request duration: 4ms
+2025-04-29T22:50:24,365 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 223.175.94.87 && URI :/ Request duration: 14ms
+2025-04-29T23:00:00,629 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 20.171.27.200 && URI :/hudson Request duration: 37ms
+2025-04-29T23:02:52,436 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 185.218.84.178 && URI :/ Request duration: 14ms
+2025-04-29T23:30:39,197 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 162.158.48.140 && URI :/ Request duration: 17ms
+2025-04-29T23:40:15,141 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 138.199.6.243 && URI :/ Request duration: 3ms
+2025-04-30T00:00:00,004 INFO   --- [MessageBroker-1] com.SwapifyBe.service.SubscriptionService(SubscriptionService.java:80) : Checking expired subscriptions
+2025-04-30T00:00:00,024 INFO   --- [MessageBroker-1] com.SwapifyBe.dao.subscription.SubscriptionDaoImpl(SubscriptionDaoImpl.java:49) : Expired subscriptions found
+2025-04-30T00:00:00,025 INFO   --- [MessageBroker-1] com.SwapifyBe.service.SubscriptionService(SubscriptionService.java:82) : Expired subscriptions found: []
