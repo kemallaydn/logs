@@ -1,0 +1,110 @@
+2025-06-01T20:57:36,311 INFO   --- [main] org.hibernate.jpa.internal.util.LogHelper(LogHelper.java:31) : HHH000204: Processing PersistenceUnitInfo [name: myPersistenceUnit]
+2025-06-01T20:57:36,340 INFO   --- [main] org.hibernate.Version(Version.java:44) : HHH000412: Hibernate ORM core version 6.2.7.Final
+2025-06-01T20:57:36,341 INFO   --- [main] org.hibernate.cfg.Environment(Environment.java:191) : HHH000406: Using bytecode reflection optimizer
+2025-06-01T20:57:36,342 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:690) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.user], use [jakarta.persistence.jdbc.user] instead
+2025-06-01T20:57:36,343 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:712) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.password], use [jakarta.persistence.jdbc.password] instead
+2025-06-01T20:57:36,343 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:1027) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.url], use [jakarta.persistence.jdbc.url] instead
+2025-06-01T20:57:36,343 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:1034) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.driver], use [jakarta.persistence.jdbc.driver] instead
+2025-06-01T20:57:36,710 INFO   --- [main] org.hibernate.bytecode.internal.BytecodeProviderInitiator(BytecodeProviderInitiator.java:53) : HHH000021: Bytecode provider name : bytebuddy
+2025-06-01T20:57:37,206 WARN   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:80) : HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-01T20:57:37,211 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:139) : HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-06-01T20:57:37,211 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:161) : HHH10001012: Connecting with JDBC URL [jdbc:postgresql://34.245.38.121:5432/swapiffy]
+2025-06-01T20:57:37,212 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:170) : HHH10001001: Connection properties: {password=****, user=Kemal}
+2025-06-01T20:57:37,212 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:174) : HHH10001003: Autocommit mode: false
+2025-06-01T20:57:37,213 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:366) : HHH10001115: Connection pool size: 20 (min=1)
+2025-06-01T20:57:37,899 INFO   --- [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator(JtaPlatformInitiator.java:51) : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-06-01T20:57:38,184 INFO   --- [main] org.hibernate.orm.connections.access(DdlTransactionIsolatorNonJtaImpl.java:52) : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2ec3b5dd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-01T20:57:45,453 INFO   --- [main] com.SwapifyBe.dao.category.CategoryDaoImpl(CategoryDaoImpl.java:18) : Initializing CategoryDaoImpl
+2025-06-01T20:57:46,818 INFO   --- [main] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:21) : Initializing ConfigurationDaoImpl
+2025-06-01T20:57:46,820 INFO   --- [main] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:23) : ConfigurationService created
+2025-06-01T20:57:46,821 INFO   --- [main] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-06-01T20:57:46,821 INFO   --- [main] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-06-01T20:57:49,536 INFO   --- [main] com.SwapifyBe.dao.auth.AuthDaoImpl(AuthDaoImpl.java:16) : Initializing AuthDaoImpl
+2025-06-01T20:57:49,538 INFO   --- [main] com.SwapifyBe.dao.advertisement.AdvertisementDaoImpl(AdvertisementDaoImpl.java:23) : Advertisement dao implementation is initializing
+2025-06-01T20:57:49,539 INFO   --- [main] com.SwapifyBe.dao.favorite.FavoritesDaoImpl(FavoritesDaoImpl.java:20) : Favorites dao implementation is initializing
+2025-06-01T20:57:49,540 INFO   --- [main] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:20) : Offer dao implementation is initializing
+2025-06-01T20:57:49,541 INFO   --- [main] com.SwapifyBe.dao.follower.FollowerDaoImpl(FollowerDaoImpl.java:20) : Followers dao implementation is initializing
+2025-06-01T20:57:49,543 INFO   --- [main] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:21) : User dao implementation is initializing
+2025-06-01T20:57:49,544 INFO   --- [main] com.SwapifyBe.dao.message.MessageDaoImpl(MessageDaoImpl.java:19) : Message dao implementation is initializing
+2025-06-01T20:57:49,545 INFO   --- [main] com.SwapifyBe.dao.user.UserDaoImpl(UserChatDaoImpl.java:20) : UserChatDaoImpl  implementation is initializing
+2025-06-01T20:57:49,546 INFO   --- [main] com.SwapifyBe.dao.BaseDao(BaseDao.java:25) : BaseDao initialized
+2025-06-01T20:57:49,549 INFO   --- [main] com.SwapifyBe.notification.PushMessage(PushMessage.java:54) : FirebaseApp initializing...
+2025-06-01T20:57:49,643 INFO   --- [main] com.SwapifyBe.notification.PushMessage(PushMessage.java:68) : FirebaseApp initialized
+2025-06-01T20:57:49,644 INFO   --- [main] com.SwapifyBe.service.NotificationService(NotificationService.java:25) : Initializing NotificationService
+2025-06-01T20:57:49,644 INFO   --- [main] com.SwapifyBe.service.SmsService(SmsService.java:33) : SmsService created
+2025-06-01T20:57:49,645 INFO   --- [main] com.SwapifyBe.service.CategoryService(CategoryService.java:19) : CategoryService created
+2025-06-01T20:57:49,653 INFO   --- [main] com.SwapifyBe.service.UserPermissionsService(UserPermissionsService.java:23) : UserPermissionsService created
+2025-06-01T20:57:49,654 INFO   --- [main] com.SwapifyBe.service.UserService(UserService.java:41) : Initializing UserService
+2025-06-01T20:57:49,656 INFO   --- [main] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:64) : Initializing AdvertisementService
+2025-06-01T20:57:49,656 INFO   --- [main] com.SwapifyBe.service.AuthService(AuthService.java:49) : Initializing AuthService
+2025-06-01T20:57:49,657 INFO   --- [main] com.SwapifyBe.service.FavoriteService(FavoriteService.java:37) : Initializing FavoriteService
+2025-06-01T20:57:49,658 INFO   --- [main] com.SwapifyBe.service.OfferService(OfferService.java:56) : Initializing OfferService
+2025-06-01T20:57:49,658 INFO   --- [main] com.SwapifyBe.service.MessageResendService(MessageResendService.java:25) : MessageResendService created
+2025-06-01T20:57:49,659 INFO   --- [main] com.SwapifyBe.service.AppLogService(AppLogService.java:49) : AppLogService created
+2025-06-01T20:57:49,659 INFO   --- [main] com.SwapifyBe.service.VideoService(VideoService.java:19) : Video Service created
+2025-06-01T20:57:49,659 INFO   --- [main] com.SwapifyBe.service.TokenService(TokenService.java:28) : Token Service created
+2025-06-01T20:57:49,660 INFO   --- [main] com.SwapifyBe.service.MessageService(MessageService.java:48) : MessageService created
+2025-06-01T20:57:49,660 INFO   --- [main] com.SwapifyBe.service.FollowerService(FollowerService.java:47) : FollowerService created
+2025-06-01T20:57:49,660 INFO   --- [main] com.SwapifyBe.service.OfferService(SearchService.java:28) : Initializing SearchService
+2025-06-01T20:57:49,661 INFO   --- [main] com.SwapifyBe.service.SubscriptionService(SubscriptionService.java:42) : SubscriptionService created
+2025-06-01T20:57:49,662 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:48) : Services started successfully
+2025-06-01T20:57:49,873 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(StartupInfoLogger.java:53) : Starting SwapifyBeApplication using Java 17.0.14 with PID 47558 (/Users/furkanaydin/Projeler/Backend/SwapifyBe/target/classes started by furkanaydin in /Users/furkanaydin/Projeler/Backend/SwapifyBe)
+2025-06-01T20:57:49,874 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SpringApplication.java:652) : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T20:57:50,719 INFO   --- [main] org.apache.coyote.http11.Http11NioProtocol(DirectJDKLog.java:173) : Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-01T20:57:50,720 INFO   --- [main] org.apache.catalina.core.StandardService(DirectJDKLog.java:173) : Starting service [Tomcat]
+2025-06-01T20:57:50,720 INFO   --- [main] org.apache.catalina.core.StandardEngine(DirectJDKLog.java:173) : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-06-01T20:57:50,748 INFO   --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](DirectJDKLog.java:173) : Initializing Spring embedded WebApplicationContext
+2025-06-01T20:57:50,939 INFO   --- [main] com.SwapifyBe.controller.AppLogController(AppLogController.java:28) : AppLogController created
+2025-06-01T20:57:50,947 INFO   --- [main] com.SwapifyBe.controller.CategoryController(CategoryController.java:26) : CategoryController created
+2025-06-01T20:57:50,947 INFO   --- [main] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:22) : ConfigurationController created
+2025-06-01T20:57:50,950 INFO   --- [main] com.SwapifyBe.controller.FavoriteController(FavoriteController.java:30) : FavoriteController created
+2025-06-01T20:57:50,951 INFO   --- [main] com.SwapifyBe.controller.FollowerController(FollowerController.java:20) : FollowerController created
+2025-06-01T20:57:50,951 INFO   --- [main] com.SwapifyBe.service.FollowerService(FollowerService.java:47) : FollowerService created
+2025-06-01T20:57:50,953 INFO   --- [main] com.SwapifyBe.controller.MessageController(MessageController.java:25) : Message Controller created
+2025-06-01T20:57:50,954 INFO   --- [main] com.SwapifyBe.controller.NotificationController(NotificationController.java:22) : NotificationController created
+2025-06-01T20:57:50,955 INFO   --- [main] com.SwapifyBe.controller.OfferController(OfferController.java:27) : OfferController initialized
+2025-06-01T20:57:50,956 INFO   --- [main] com.SwapifyBe.controller.PaymentController(PaymentController.java:22) : Payment Controller created
+2025-06-01T20:57:50,957 INFO   --- [main] com.SwapifyBe.controller.SearchController(SearchController.java:23) : SearchController created
+2025-06-01T20:57:50,957 INFO   --- [main] com.SwapifyBe.controller.SubscriptionController(SubscriptionController.java:41) : SubscriptionController created
+2025-06-01T20:57:50,958 INFO   --- [main] com.SwapifyBe.controller.TokenController(TokenController.java:24) : Token Controller created
+2025-06-01T20:57:50,959 INFO   --- [main] com.SwapifyBe.controller.UserController(UserController.java:32) : UserController created
+2025-06-01T20:57:50,960 INFO   --- [main] com.SwapifyBe.controller.VideoController(VideoController.java:22) : Video Controller created
+2025-06-01T20:57:51,658 INFO   --- [main] org.apache.coyote.http11.Http11NioProtocol(DirectJDKLog.java:173) : Starting ProtocolHandler ["http-nio-8080"]
+2025-06-01T20:57:51,674 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(StartupInfoLogger.java:59) : Started SwapifyBeApplication in 1.982 seconds (process running for 16.162)
+2025-06-01T20:57:51,677 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:71) : Application started event
+2025-06-01T20:57:51,679 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:61) : Application ready event
+2025-06-01T20:57:52,158 INFO   --- [RMI TCP Connection(5)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](DirectJDKLog.java:173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-01T20:57:52,944 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/ws/info Request duration: 16ms
+2025-06-01T20:57:52,967 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/ws/664/hvpwyigb/websocket Request duration: 10ms
+2025-06-01T20:57:52,992 INFO   --- [clientInboundChannel-4] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:82) : Saving user ID as active in Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T20:57:53,006 INFO   --- [clientInboundChannel-4] com.hazelcast.internal.partition.impl.PartitionStateManager(StandardLoggerFactory.java:56) : [192.168.1.102]:5701 [dev] [5.3.7] Initializing cluster partition table arrangement...
+2025-06-01T20:57:53,040 INFO   --- [clientInboundChannel-4] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:103) : Saving user to Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T20:57:53,041 INFO   --- [clientInboundChannel-4] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:106) : User saved to Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T20:58:09,982 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.UserService(UserService.java:51) : Getting user
+2025-06-01T20:58:09,983 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:26) : Getting user from the database
+2025-06-01T20:58:10,166 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:32) : User retrieved from the database
+2025-06-01T20:58:10,167 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.UserService(UserService.java:59) : User retrieved
+2025-06-01T20:58:10,167 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.UserService(UserService.java:51) : Getting user
+2025-06-01T20:58:10,167 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:26) : Getting user from the database
+2025-06-01T20:58:10,325 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:32) : User retrieved from the database
+2025-06-01T20:58:10,325 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.UserService(UserService.java:59) : User retrieved
+2025-06-01T20:58:10,326 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:218) : getAdvertisementUserId retrieving...
+2025-06-01T20:58:10,687 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:224) : getAdvertisementUserId retrieved
+2025-06-01T20:58:10,720 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/offer/sendDonatedOffer Request duration: 773ms
+2025-06-01T20:58:41,063 WARN   --- [hz.suspicious_murdock.InvocationMonitorThread] com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor(StandardLoggerFactory.java:56) : [192.168.1.102]:5701 [dev] [5.3.7] MonitorInvocationsTask delayed 20011 ms
+2025-06-01T20:58:41,132 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.UserService(UserService.java:51) : Getting user
+2025-06-01T20:58:41,134 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:26) : Getting user from the database
+2025-06-01T20:58:41,355 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:32) : User retrieved from the database
+2025-06-01T20:58:41,378 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.UserService(UserService.java:59) : User retrieved
+2025-06-01T20:58:42,091 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.UserService(UserService.java:51) : Getting user
+2025-06-01T20:58:42,091 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:26) : Getting user from the database
+2025-06-01T20:58:42,259 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:32) : User retrieved from the database
+2025-06-01T20:58:42,260 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.UserService(UserService.java:59) : User retrieved
+2025-06-01T20:58:42,964 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:218) : getAdvertisementUserId retrieving...
+2025-06-01T20:58:43,300 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:224) : getAdvertisementUserId retrieved
+2025-06-01T20:59:07,503 WARN   --- [hz.suspicious_murdock.InvocationMonitorThread] com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor(StandardLoggerFactory.java:56) : [192.168.1.102]:5701 [dev] [5.3.7] MonitorInvocationsTask delayed 23536 ms
+2025-06-01T20:59:07,505 WARN   --- [hz.suspicious_murdock.InvocationMonitorThread] com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor(StandardLoggerFactory.java:56) : [192.168.1.102]:5701 [dev] [5.3.7] BroadcastOperationControlTask delayed 11425 ms
+2025-06-01T21:00:35,859 WARN   --- [hz.suspicious_murdock.InvocationMonitorThread] com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor(StandardLoggerFactory.java:56) : [192.168.1.102]:5701 [dev] [5.3.7] MonitorInvocationsTask delayed 77350 ms
+2025-06-01T21:00:35,863 WARN   --- [hz.suspicious_murdock.InvocationMonitorThread] com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor(StandardLoggerFactory.java:56) : [192.168.1.102]:5701 [dev] [5.3.7] BroadcastOperationControlTask delayed 63371 ms
+2025-06-01T21:00:35,867 WARN   --- [hz.suspicious_murdock.cached.thread-21] com.hazelcast.internal.cluster.impl.ClusterHeartbeatManager(StandardLoggerFactory.java:56) : [192.168.1.102]:5701 [dev] [5.3.7] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 73369 ms, Heartbeat-Timeout: 60000 ms
+2025-06-01T21:00:35,885 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/offer/sendDonatedOffer Request duration: 141996ms
