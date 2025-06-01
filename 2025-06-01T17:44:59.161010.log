@@ -1,0 +1,292 @@
+2025-06-01T17:35:11,714 INFO   --- [main] org.hibernate.jpa.internal.util.LogHelper(LogHelper.java:31) : HHH000204: Processing PersistenceUnitInfo [name: myPersistenceUnit]
+2025-06-01T17:35:11,739 INFO   --- [main] org.hibernate.Version(Version.java:44) : HHH000412: Hibernate ORM core version 6.2.7.Final
+2025-06-01T17:35:11,740 INFO   --- [main] org.hibernate.cfg.Environment(Environment.java:191) : HHH000406: Using bytecode reflection optimizer
+2025-06-01T17:35:11,742 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:690) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.user], use [jakarta.persistence.jdbc.user] instead
+2025-06-01T17:35:11,742 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:712) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.password], use [jakarta.persistence.jdbc.password] instead
+2025-06-01T17:35:11,742 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:1027) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.url], use [jakarta.persistence.jdbc.url] instead
+2025-06-01T17:35:11,743 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:1034) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.driver], use [jakarta.persistence.jdbc.driver] instead
+2025-06-01T17:35:12,081 INFO   --- [main] org.hibernate.bytecode.internal.BytecodeProviderInitiator(BytecodeProviderInitiator.java:53) : HHH000021: Bytecode provider name : bytebuddy
+2025-06-01T17:35:12,498 WARN   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:80) : HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-01T17:35:12,500 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:139) : HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-06-01T17:35:12,500 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:161) : HHH10001012: Connecting with JDBC URL [jdbc:postgresql://34.245.38.121:5432/swapiffy]
+2025-06-01T17:35:12,500 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:170) : HHH10001001: Connection properties: {password=****, user=Kemal}
+2025-06-01T17:35:12,500 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:174) : HHH10001003: Autocommit mode: false
+2025-06-01T17:35:12,501 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:366) : HHH10001115: Connection pool size: 20 (min=1)
+2025-06-01T17:35:13,164 INFO   --- [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator(JtaPlatformInitiator.java:51) : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-06-01T17:35:13,452 INFO   --- [main] org.hibernate.orm.connections.access(DdlTransactionIsolatorNonJtaImpl.java:52) : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6044311a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-01T17:35:19,903 INFO   --- [main] com.SwapifyBe.dao.category.CategoryDaoImpl(CategoryDaoImpl.java:18) : Initializing CategoryDaoImpl
+2025-06-01T17:35:21,208 INFO   --- [main] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:21) : Initializing ConfigurationDaoImpl
+2025-06-01T17:35:21,209 INFO   --- [main] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:23) : ConfigurationService created
+2025-06-01T17:35:21,209 INFO   --- [main] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-06-01T17:35:21,209 INFO   --- [main] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-06-01T17:35:24,210 INFO   --- [main] com.SwapifyBe.dao.auth.AuthDaoImpl(AuthDaoImpl.java:16) : Initializing AuthDaoImpl
+2025-06-01T17:35:24,212 INFO   --- [main] com.SwapifyBe.dao.advertisement.AdvertisementDaoImpl(AdvertisementDaoImpl.java:23) : Advertisement dao implementation is initializing
+2025-06-01T17:35:24,213 INFO   --- [main] com.SwapifyBe.dao.favorite.FavoritesDaoImpl(FavoritesDaoImpl.java:20) : Favorites dao implementation is initializing
+2025-06-01T17:35:24,214 INFO   --- [main] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:20) : Offer dao implementation is initializing
+2025-06-01T17:35:24,216 INFO   --- [main] com.SwapifyBe.dao.follower.FollowerDaoImpl(FollowerDaoImpl.java:20) : Followers dao implementation is initializing
+2025-06-01T17:35:24,218 INFO   --- [main] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:21) : User dao implementation is initializing
+2025-06-01T17:35:24,219 INFO   --- [main] com.SwapifyBe.dao.message.MessageDaoImpl(MessageDaoImpl.java:19) : Message dao implementation is initializing
+2025-06-01T17:35:24,220 INFO   --- [main] com.SwapifyBe.dao.user.UserDaoImpl(UserChatDaoImpl.java:20) : UserChatDaoImpl  implementation is initializing
+2025-06-01T17:35:24,223 INFO   --- [main] com.SwapifyBe.notification.PushMessage(PushMessage.java:54) : FirebaseApp initializing...
+2025-06-01T17:35:24,312 INFO   --- [main] com.SwapifyBe.notification.PushMessage(PushMessage.java:68) : FirebaseApp initialized
+2025-06-01T17:35:24,312 INFO   --- [main] com.SwapifyBe.service.NotificationService(NotificationService.java:25) : Initializing NotificationService
+2025-06-01T17:35:24,313 INFO   --- [main] com.SwapifyBe.service.SmsService(SmsService.java:33) : SmsService created
+2025-06-01T17:35:24,313 INFO   --- [main] com.SwapifyBe.service.CategoryService(CategoryService.java:19) : CategoryService created
+2025-06-01T17:35:24,322 INFO   --- [main] com.SwapifyBe.service.UserPermissionsService(UserPermissionsService.java:23) : UserPermissionsService created
+2025-06-01T17:35:24,323 INFO   --- [main] com.SwapifyBe.service.UserService(UserService.java:41) : Initializing UserService
+2025-06-01T17:35:24,325 INFO   --- [main] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:64) : Initializing AdvertisementService
+2025-06-01T17:35:24,326 INFO   --- [main] com.SwapifyBe.service.AuthService(AuthService.java:49) : Initializing AuthService
+2025-06-01T17:35:24,327 INFO   --- [main] com.SwapifyBe.service.FavoriteService(FavoriteService.java:37) : Initializing FavoriteService
+2025-06-01T17:35:24,327 INFO   --- [main] com.SwapifyBe.service.OfferService(OfferService.java:56) : Initializing OfferService
+2025-06-01T17:35:24,328 INFO   --- [main] com.SwapifyBe.service.MessageResendService(MessageResendService.java:25) : MessageResendService created
+2025-06-01T17:35:24,328 INFO   --- [main] com.SwapifyBe.service.AppLogService(AppLogService.java:49) : AppLogService created
+2025-06-01T17:35:24,328 INFO   --- [main] com.SwapifyBe.service.VideoService(VideoService.java:19) : Video Service created
+2025-06-01T17:35:24,328 INFO   --- [main] com.SwapifyBe.service.TokenService(TokenService.java:28) : Token Service created
+2025-06-01T17:35:24,329 INFO   --- [main] com.SwapifyBe.service.MessageService(MessageService.java:48) : MessageService created
+2025-06-01T17:35:24,329 INFO   --- [main] com.SwapifyBe.service.FollowerService(FollowerService.java:47) : FollowerService created
+2025-06-01T17:35:24,330 INFO   --- [main] com.SwapifyBe.service.OfferService(SearchService.java:28) : Initializing SearchService
+2025-06-01T17:35:24,331 INFO   --- [main] com.SwapifyBe.service.SubscriptionService(SubscriptionService.java:42) : SubscriptionService created
+2025-06-01T17:35:24,331 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:48) : Services started successfully
+2025-06-01T17:35:24,542 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(StartupInfoLogger.java:53) : Starting SwapifyBeApplication using Java 17.0.14 with PID 44915 (/Users/furkanaydin/Projeler/Backend/SwapifyBe/target/classes started by furkanaydin in /Users/furkanaydin/Projeler/Backend/SwapifyBe)
+2025-06-01T17:35:24,543 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SpringApplication.java:652) : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T17:35:25,561 INFO   --- [main] org.apache.coyote.http11.Http11NioProtocol(DirectJDKLog.java:173) : Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-01T17:35:25,561 INFO   --- [main] org.apache.catalina.core.StandardService(DirectJDKLog.java:173) : Starting service [Tomcat]
+2025-06-01T17:35:25,562 INFO   --- [main] org.apache.catalina.core.StandardEngine(DirectJDKLog.java:173) : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-06-01T17:35:25,590 INFO   --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](DirectJDKLog.java:173) : Initializing Spring embedded WebApplicationContext
+2025-06-01T17:35:25,861 INFO   --- [main] com.SwapifyBe.controller.AppLogController(AppLogController.java:28) : AppLogController created
+2025-06-01T17:35:25,868 INFO   --- [main] com.SwapifyBe.controller.CategoryController(CategoryController.java:26) : CategoryController created
+2025-06-01T17:35:25,868 INFO   --- [main] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:22) : ConfigurationController created
+2025-06-01T17:35:25,871 INFO   --- [main] com.SwapifyBe.controller.FavoriteController(FavoriteController.java:30) : FavoriteController created
+2025-06-01T17:35:25,872 INFO   --- [main] com.SwapifyBe.controller.FollowerController(FollowerController.java:20) : FollowerController created
+2025-06-01T17:35:25,872 INFO   --- [main] com.SwapifyBe.service.FollowerService(FollowerService.java:47) : FollowerService created
+2025-06-01T17:35:25,873 INFO   --- [main] com.SwapifyBe.controller.MessageController(MessageController.java:28) : Message Controller created
+2025-06-01T17:35:25,873 INFO   --- [main] com.SwapifyBe.controller.NotificationController(NotificationController.java:22) : NotificationController created
+2025-06-01T17:35:25,874 INFO   --- [main] com.SwapifyBe.controller.OfferController(OfferController.java:25) : OfferController initialized
+2025-06-01T17:35:25,875 INFO   --- [main] com.SwapifyBe.controller.PaymentController(PaymentController.java:22) : Payment Controller created
+2025-06-01T17:35:25,875 INFO   --- [main] com.SwapifyBe.controller.SearchController(SearchController.java:23) : SearchController created
+2025-06-01T17:35:25,876 INFO   --- [main] com.SwapifyBe.controller.SubscriptionController(SubscriptionController.java:41) : SubscriptionController created
+2025-06-01T17:35:25,876 INFO   --- [main] com.SwapifyBe.controller.TokenController(TokenController.java:24) : Token Controller created
+2025-06-01T17:35:25,877 INFO   --- [main] com.SwapifyBe.controller.UserController(UserController.java:32) : UserController created
+2025-06-01T17:35:25,878 INFO   --- [main] com.SwapifyBe.controller.VideoController(VideoController.java:22) : Video Controller created
+2025-06-01T17:35:26,611 INFO   --- [main] org.apache.coyote.http11.Http11NioProtocol(DirectJDKLog.java:173) : Starting ProtocolHandler ["http-nio-8080"]
+2025-06-01T17:35:26,628 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(StartupInfoLogger.java:59) : Started SwapifyBeApplication in 2.269 seconds (process running for 15.722)
+2025-06-01T17:35:26,632 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:71) : Application started event
+2025-06-01T17:35:26,633 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:61) : Application ready event
+2025-06-01T17:35:26,965 INFO   --- [RMI TCP Connection(1)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](DirectJDKLog.java:173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-01T17:35:29,436 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/ws/info Request duration: 13ms
+2025-06-01T17:35:29,456 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/ws/844/0phobfvz/websocket Request duration: 10ms
+2025-06-01T17:35:29,483 INFO   --- [clientInboundChannel-4] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:82) : Saving user ID as active in Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:35:29,496 INFO   --- [clientInboundChannel-4] com.hazelcast.internal.partition.impl.PartitionStateManager(StandardLoggerFactory.java:56) : [192.168.1.102]:5701 [dev] [5.3.7] Initializing cluster partition table arrangement...
+2025-06-01T17:35:29,527 INFO   --- [clientInboundChannel-4] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:103) : Saving user to Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:35:29,528 INFO   --- [clientInboundChannel-4] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:106) : User saved to Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:12,530 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.controller.CategoryController(CategoryController.java:32) : All categories retrieved
+2025-06-01T17:37:12,531 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:39) : getErrorConfig all configurations
+2025-06-01T17:37:12,532 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:56) : ConfigurationService getErrorConfig
+2025-06-01T17:37:12,532 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.CategoryService(CategoryService.java:24) : Getting all categories
+2025-06-01T17:37:12,534 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:28) : Getting all configurations
+2025-06-01T17:37:12,534 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-06-01T17:37:12,534 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-06-01T17:37:12,747 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/configuration/getConfig Request duration: 236ms
+2025-06-01T17:37:13,269 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/category/getAllCategories Request duration: 765ms
+2025-06-01T17:37:13,826 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/configuration/getErrorConfig Request duration: 1320ms
+2025-06-01T17:37:13,848 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:233) : All advertisements retrieving...
+2025-06-01T17:37:13,871 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:233) : All advertisements retrieving...
+2025-06-01T17:37:13,885 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:55) : Getting FCM token from Hazelcast for ID: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:13,885 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.controller.NotificationController(NotificationController.java:28) : Getting notifications
+2025-06-01T17:37:13,885 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.service.OfferService(OfferService.java:206) : Fetching sent offers for user: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:13,885 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:68) : Getting offers from the database
+2025-06-01T17:37:14,211 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/message/getChatUsers Request duration: 343ms
+2025-06-01T17:37:14,219 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.OfferService(OfferService.java:209) : Fetching received offers for user: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:14,219 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:87) : Getting offers from the database
+2025-06-01T17:37:14,355 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:248) : All advertisements retrieved
+2025-06-01T17:37:14,355 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:248) : All advertisements retrieved
+2025-06-01T17:37:14,370 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/advertisement/getAll Request duration: 527ms
+2025-06-01T17:37:14,370 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/advertisement/getAll Request duration: 501ms
+2025-06-01T17:37:14,378 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:196) : getAllAdvertisementUserId retrieving...
+2025-06-01T17:37:14,463 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:93) : Offers retrieved from the database
+2025-06-01T17:37:14,543 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.OfferService(OfferService.java:190) : Offers successfully retrieved for user: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:14,546 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/offer/getOffers Request duration: 328ms
+2025-06-01T17:37:14,626 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/notification/getNotifications Request duration: 757ms
+2025-06-01T17:37:14,683 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/advertisement/get Request duration: 307ms
+2025-06-01T17:37:14,709 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/follower/getFollower Request duration: 160ms
+2025-06-01T17:37:14,851 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/token/getFcmToken Request duration: 160ms
+2025-06-01T17:37:14,968 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/follower/getFollowing Request duration: 334ms
+2025-06-01T17:37:15,173 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:46) : Saving FCM token to Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe - f9g9fAiBaUzIkQmSggyWiV:APA91bGfBLCt_7wMOORW4nEt_TKZfCurBzEuQmofImGIL4fpNFCUFC3_iRJ5BV3Oyn6v9yHWGPL-Mnj8vM2VqI8lYjdWOLFUTQ8QWzwGceCj4NIoqmc9P0g
+2025-06-01T17:37:15,175 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:49) : FCM token saved to Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe - f9g9fAiBaUzIkQmSggyWiV:APA91bGfBLCt_7wMOORW4nEt_TKZfCurBzEuQmofImGIL4fpNFCUFC3_iRJ5BV3Oyn6v9yHWGPL-Mnj8vM2VqI8lYjdWOLFUTQ8QWzwGceCj4NIoqmc9P0g
+2025-06-01T17:37:15,179 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/token/alreadyExistsHazelcastFcmToken Request duration: 1311ms
+2025-06-01T17:37:15,716 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/favorite/getAllFavorite Request duration: 1338ms
+2025-06-01T17:37:15,838 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:74) : Offers retrieved from the database
+2025-06-01T17:37:15,916 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.service.OfferService(OfferService.java:190) : Offers successfully retrieved for user: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:15,918 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/offer/getOffers Request duration: 2049ms
+2025-06-01T17:37:16,031 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/ws/info Request duration: 2ms
+2025-06-01T17:37:16,041 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/ws/623/atsueyyn/websocket Request duration: 2ms
+2025-06-01T17:37:16,053 INFO   --- [clientInboundChannel-22] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:82) : Saving user ID as active in Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:16,058 INFO   --- [clientInboundChannel-22] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:103) : Saving user to Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:16,058 INFO   --- [clientInboundChannel-22] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:106) : User saved to Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:23,384 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/message/getChatUsers Request duration: 324ms
+2025-06-01T17:37:40,424 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/message/getChatUsers Request duration: 313ms
+2025-06-01T17:37:40,497 INFO   --- [clientInboundChannel-17] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:26) : Getting user from the database
+2025-06-01T17:37:40,548 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:117) : Getting user status from Hazelcast: 23c8ee45-1b04-4bde-85e9-fd7ff74c33bc
+2025-06-01T17:37:40,549 WARN   --- [http-nio-8080-exec-4] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:121) : User status not found for userId: 23c8ee45-1b04-4bde-85e9-fd7ff74c33bc
+2025-06-01T17:37:40,552 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/user/message/onlinestatus/23c8ee45-1b04-4bde-85e9-fd7ff74c33bc Request duration: 11ms
+2025-06-01T17:37:40,654 INFO   --- [clientInboundChannel-17] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:32) : User retrieved from the database
+2025-06-01T17:37:40,654 INFO   --- [clientInboundChannel-17] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:26) : Getting user from the database
+2025-06-01T17:37:40,812 INFO   --- [clientInboundChannel-17] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:32) : User retrieved from the database
+2025-06-01T17:37:40,958 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/message/getChatMessages Request duration: 416ms
+2025-06-01T17:37:41,350 INFO   --- [clientInboundChannel-17] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:75) : Checking if user is active in Hazelcast for ID: 23c8ee45-1b04-4bde-85e9-fd7ff74c33bc
+2025-06-01T17:37:41,352 INFO   --- [clientInboundChannel-17] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:97) : Sending message to Firebase: e2a80601-813a-46dc-ac00-459f8e32cdbc
+2025-06-01T17:37:41,354 INFO   --- [clientInboundChannel-17] com.SwapifyBe.service.UserService(UserService.java:51) : Getting user
+2025-06-01T17:37:41,354 INFO   --- [clientInboundChannel-17] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:26) : Getting user from the database
+2025-06-01T17:37:41,508 INFO   --- [clientInboundChannel-17] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:32) : User retrieved from the database
+2025-06-01T17:37:41,509 INFO   --- [clientInboundChannel-17] com.SwapifyBe.service.UserService(UserService.java:59) : User retrieved
+2025-06-01T17:37:41,513 INFO   --- [clientInboundChannel-17] com.SwapifyBe.notification.PushMessage(PushMessage.java:78) : Sending notification to: 23c8ee45-1b04-4bde-85e9-fd7ff74c33bc
+2025-06-01T17:37:41,514 INFO   --- [clientInboundChannel-17] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:55) : Getting FCM token from Hazelcast for ID: 23c8ee45-1b04-4bde-85e9-fd7ff74c33bc
+2025-06-01T17:37:42,659 INFO   --- [clientInboundChannel-17] com.SwapifyBe.notification.PushMessage(PushMessage.java:157) : Notification sent successfully: projects/takashub-f8855/messages/1748788662353885
+2025-06-01T17:37:42,660 INFO   --- [clientInboundChannel-17] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:111) : Message sent to Firebase: ssdsdgd
+2025-06-01T17:37:45,936 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/message/getChatUsers Request duration: 331ms
+2025-06-01T17:37:48,051 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:28) : Getting all configurations
+2025-06-01T17:37:48,051 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:39) : getErrorConfig all configurations
+2025-06-01T17:37:48,052 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-06-01T17:37:48,052 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:56) : ConfigurationService getErrorConfig
+2025-06-01T17:37:48,052 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-06-01T17:37:48,055 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.controller.CategoryController(CategoryController.java:32) : All categories retrieved
+2025-06-01T17:37:48,056 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.CategoryService(CategoryService.java:24) : Getting all categories
+2025-06-01T17:37:48,206 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/configuration/getErrorConfig Request duration: 155ms
+2025-06-01T17:37:48,206 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/configuration/getConfig Request duration: 156ms
+2025-06-01T17:37:48,219 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/category/getAllCategories Request duration: 165ms
+2025-06-01T17:37:48,249 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:233) : All advertisements retrieving...
+2025-06-01T17:37:48,256 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:55) : Getting FCM token from Hazelcast for ID: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:48,258 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/token/alreadyExistsHazelcastFcmToken Request duration: 3ms
+2025-06-01T17:37:48,262 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.service.OfferService(OfferService.java:206) : Fetching sent offers for user: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:48,262 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:68) : Getting offers from the database
+2025-06-01T17:37:48,267 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:233) : All advertisements retrieving...
+2025-06-01T17:37:48,267 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.controller.NotificationController(NotificationController.java:28) : Getting notifications
+2025-06-01T17:37:48,268 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.service.OfferService(OfferService.java:209) : Fetching received offers for user: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:48,268 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:87) : Getting offers from the database
+2025-06-01T17:37:48,422 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/notification/getNotifications Request duration: 155ms
+2025-06-01T17:37:48,430 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:196) : getAllAdvertisementUserId retrieving...
+2025-06-01T17:37:48,497 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:93) : Offers retrieved from the database
+2025-06-01T17:37:48,507 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:74) : Offers retrieved from the database
+2025-06-01T17:37:48,565 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/message/getChatUsers Request duration: 311ms
+2025-06-01T17:37:48,570 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.service.OfferService(OfferService.java:190) : Offers successfully retrieved for user: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:48,571 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/offer/getOffers Request duration: 304ms
+2025-06-01T17:37:48,586 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.service.OfferService(OfferService.java:190) : Offers successfully retrieved for user: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:48,586 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/offer/getOffers Request duration: 326ms
+2025-06-01T17:37:48,713 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:248) : All advertisements retrieved
+2025-06-01T17:37:48,715 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/advertisement/getAll Request duration: 478ms
+2025-06-01T17:37:48,718 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:248) : All advertisements retrieved
+2025-06-01T17:37:48,720 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/advertisement/getAll Request duration: 457ms
+2025-06-01T17:37:48,727 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/follower/getFollower Request duration: 153ms
+2025-06-01T17:37:48,735 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/advertisement/get Request duration: 307ms
+2025-06-01T17:37:48,880 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/token/getFcmToken Request duration: 160ms
+2025-06-01T17:37:48,913 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/follower/getFollowing Request duration: 321ms
+2025-06-01T17:37:49,901 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/favorite/getAllFavorite Request duration: 1333ms
+2025-06-01T17:37:49,979 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/message/getChatUsers Request duration: 312ms
+2025-06-01T17:37:50,064 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/ws/info Request duration: 3ms
+2025-06-01T17:37:50,080 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/ws/669/vamughrs/websocket Request duration: 4ms
+2025-06-01T17:37:50,092 INFO   --- [clientInboundChannel-22] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:82) : Saving user ID as active in Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:50,092 INFO   --- [clientInboundChannel-22] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:103) : Saving user to Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:50,093 INFO   --- [clientInboundChannel-22] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:106) : User saved to Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:52,583 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.controller.CategoryController(CategoryController.java:32) : All categories retrieved
+2025-06-01T17:37:52,583 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:39) : getErrorConfig all configurations
+2025-06-01T17:37:52,583 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.service.CategoryService(CategoryService.java:24) : Getting all categories
+2025-06-01T17:37:52,583 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:56) : ConfigurationService getErrorConfig
+2025-06-01T17:37:52,583 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:28) : Getting all configurations
+2025-06-01T17:37:52,583 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-06-01T17:37:52,583 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-06-01T17:37:52,735 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/configuration/getConfig Request duration: 153ms
+2025-06-01T17:37:52,739 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/category/getAllCategories Request duration: 157ms
+2025-06-01T17:37:52,743 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/configuration/getErrorConfig Request duration: 161ms
+2025-06-01T17:37:52,760 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:233) : All advertisements retrieving...
+2025-06-01T17:37:52,773 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:55) : Getting FCM token from Hazelcast for ID: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:52,775 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/token/alreadyExistsHazelcastFcmToken Request duration: 3ms
+2025-06-01T17:37:52,787 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.controller.NotificationController(NotificationController.java:28) : Getting notifications
+2025-06-01T17:37:52,788 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:233) : All advertisements retrieving...
+2025-06-01T17:37:52,788 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.OfferService(OfferService.java:206) : Fetching sent offers for user: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:52,788 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:68) : Getting offers from the database
+2025-06-01T17:37:52,788 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.service.OfferService(OfferService.java:209) : Fetching received offers for user: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:52,788 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:87) : Getting offers from the database
+2025-06-01T17:37:52,943 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/notification/getNotifications Request duration: 156ms
+2025-06-01T17:37:52,952 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:196) : getAllAdvertisementUserId retrieving...
+2025-06-01T17:37:53,015 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:74) : Offers retrieved from the database
+2025-06-01T17:37:53,030 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:93) : Offers retrieved from the database
+2025-06-01T17:37:53,085 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/message/getChatUsers Request duration: 312ms
+2025-06-01T17:37:53,093 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.OfferService(OfferService.java:190) : Offers successfully retrieved for user: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:53,096 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/offer/getOffers Request duration: 309ms
+2025-06-01T17:37:53,109 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.service.OfferService(OfferService.java:190) : Offers successfully retrieved for user: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:53,111 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/offer/getOffers Request duration: 324ms
+2025-06-01T17:37:53,216 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:248) : All advertisements retrieved
+2025-06-01T17:37:53,217 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/advertisement/getAll Request duration: 460ms
+2025-06-01T17:37:53,247 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:248) : All advertisements retrieved
+2025-06-01T17:37:53,250 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/advertisement/getAll Request duration: 464ms
+2025-06-01T17:37:53,257 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/advertisement/get Request duration: 306ms
+2025-06-01T17:37:53,257 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/follower/getFollower Request duration: 157ms
+2025-06-01T17:37:53,371 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/token/getFcmToken Request duration: 151ms
+2025-06-01T17:37:53,437 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/follower/getFollowing Request duration: 322ms
+2025-06-01T17:37:54,434 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/favorite/getAllFavorite Request duration: 1346ms
+2025-06-01T17:37:54,435 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/api/message/getChatUsers Request duration: 314ms
+2025-06-01T17:37:54,513 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/ws/info Request duration: 2ms
+2025-06-01T17:37:54,524 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 192.168.1.102 && URI :/ws/230/tcdfwgp3/websocket Request duration: 3ms
+2025-06-01T17:37:54,535 INFO   --- [clientInboundChannel-20] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:82) : Saving user ID as active in Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:54,536 INFO   --- [clientInboundChannel-20] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:103) : Saving user to Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:37:54,536 INFO   --- [clientInboundChannel-20] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:106) : User saved to Hazelcast: 11622642-8588-4749-ac0f-31314ae816fe
+2025-06-01T17:40:21,817 WARN   --- [hz.dreamy_payne.cached.thread-6] com.hazelcast.internal.cluster.impl.MulticastService(StandardLoggerFactory.java:56) : [192.168.1.102]:5701 [dev] [5.3.7] Sending multicast datagram failed. Exception message saying the operation is not permitted usually means the underlying OS is not able to send packets at a given pace. It can be caused by starting several hazelcast members in parallel when the members send their join message nearly at the same time.
+java.net.NoRouteToHostException: No route to host
+	at java.base/sun.nio.ch.DatagramChannelImpl.send0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:901) ~[?:?]
+	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:863) ~[?:?]
+	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:821) ~[?:?]
+	at java.base/sun.nio.ch.DatagramChannelImpl.blockingSend(DatagramChannelImpl.java:853) ~[?:?]
+	at java.base/sun.nio.ch.DatagramSocketAdaptor.send(DatagramSocketAdaptor.java:218) ~[?:?]
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:664) ~[?:?]
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:309) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:113) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:77) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.internal.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:217) [hazelcast-5.3.7.jar:5.3.7]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+	at com.hazelcast.internal.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:76) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.internal.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:111) [hazelcast-5.3.7.jar:5.3.7]
+2025-06-01T17:42:21,808 WARN   --- [hz.dreamy_payne.cached.thread-8] com.hazelcast.internal.cluster.impl.MulticastService(StandardLoggerFactory.java:56) : [192.168.1.102]:5701 [dev] [5.3.7] Sending multicast datagram failed. Exception message saying the operation is not permitted usually means the underlying OS is not able to send packets at a given pace. It can be caused by starting several hazelcast members in parallel when the members send their join message nearly at the same time.
+java.net.NoRouteToHostException: No route to host
+	at java.base/sun.nio.ch.DatagramChannelImpl.send0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:901) ~[?:?]
+	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:863) ~[?:?]
+	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:821) ~[?:?]
+	at java.base/sun.nio.ch.DatagramChannelImpl.blockingSend(DatagramChannelImpl.java:853) ~[?:?]
+	at java.base/sun.nio.ch.DatagramSocketAdaptor.send(DatagramSocketAdaptor.java:218) ~[?:?]
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:664) ~[?:?]
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:309) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:113) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:77) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.internal.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:217) [hazelcast-5.3.7.jar:5.3.7]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+	at com.hazelcast.internal.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:76) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.internal.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:111) [hazelcast-5.3.7.jar:5.3.7]
+2025-06-01T17:44:21,810 WARN   --- [hz.dreamy_payne.cached.thread-1] com.hazelcast.internal.cluster.impl.MulticastService(StandardLoggerFactory.java:56) : [192.168.1.102]:5701 [dev] [5.3.7] Sending multicast datagram failed. Exception message saying the operation is not permitted usually means the underlying OS is not able to send packets at a given pace. It can be caused by starting several hazelcast members in parallel when the members send their join message nearly at the same time.
+java.net.NoRouteToHostException: No route to host
+	at java.base/sun.nio.ch.DatagramChannelImpl.send0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:901) ~[?:?]
+	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:863) ~[?:?]
+	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:821) ~[?:?]
+	at java.base/sun.nio.ch.DatagramChannelImpl.blockingSend(DatagramChannelImpl.java:853) ~[?:?]
+	at java.base/sun.nio.ch.DatagramSocketAdaptor.send(DatagramSocketAdaptor.java:218) ~[?:?]
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:664) ~[?:?]
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:309) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:113) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:77) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.internal.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:217) [hazelcast-5.3.7.jar:5.3.7]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+	at com.hazelcast.internal.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:76) [hazelcast-5.3.7.jar:5.3.7]
+	at com.hazelcast.internal.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:111) [hazelcast-5.3.7.jar:5.3.7]
