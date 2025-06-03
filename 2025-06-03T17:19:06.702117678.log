@@ -1,0 +1,859 @@
+2025-06-03T06:47:06,778 INFO   --- [main] org.hibernate.jpa.internal.util.LogHelper(LogHelper.java:31) : HHH000204: Processing PersistenceUnitInfo [name: myPersistenceUnit]
+2025-06-03T06:47:07,005 INFO   --- [main] org.hibernate.Version(Version.java:44) : HHH000412: Hibernate ORM core version 6.2.7.Final
+2025-06-03T06:47:07,017 INFO   --- [main] org.hibernate.cfg.Environment(Environment.java:191) : HHH000406: Using bytecode reflection optimizer
+2025-06-03T06:47:07,035 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:690) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.user], use [jakarta.persistence.jdbc.user] instead
+2025-06-03T06:47:07,038 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:712) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.password], use [jakarta.persistence.jdbc.password] instead
+2025-06-03T06:47:07,044 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:1027) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.url], use [jakarta.persistence.jdbc.url] instead
+2025-06-03T06:47:07,045 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:1034) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.driver], use [jakarta.persistence.jdbc.driver] instead
+2025-06-03T06:47:09,878 INFO   --- [main] org.hibernate.bytecode.internal.BytecodeProviderInitiator(BytecodeProviderInitiator.java:53) : HHH000021: Bytecode provider name : bytebuddy
+2025-06-03T06:47:12,216 WARN   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:80) : HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-03T06:47:12,223 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:139) : HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-06-03T06:47:12,224 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:161) : HHH10001012: Connecting with JDBC URL [jdbc:postgresql://34.245.38.121:5432/swapiffy]
+2025-06-03T06:47:12,225 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:170) : HHH10001001: Connection properties: {password=****, user=Kemal}
+2025-06-03T06:47:12,225 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:174) : HHH10001003: Autocommit mode: false
+2025-06-03T06:47:12,228 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:366) : HHH10001115: Connection pool size: 20 (min=1)
+2025-06-03T06:47:12,748 INFO   --- [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator(JtaPlatformInitiator.java:51) : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-06-03T06:47:14,256 INFO   --- [main] org.hibernate.orm.connections.access(DdlTransactionIsolatorNonJtaImpl.java:52) : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2921aa59] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-03T06:47:14,735 INFO   --- [main] com.SwapifyBe.dao.category.CategoryDaoImpl(CategoryDaoImpl.java:18) : Initializing CategoryDaoImpl
+2025-06-03T06:47:15,028 INFO   --- [main] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:21) : Initializing ConfigurationDaoImpl
+2025-06-03T06:47:15,029 INFO   --- [main] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:23) : ConfigurationService created
+2025-06-03T06:47:15,030 INFO   --- [main] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-06-03T06:47:15,031 INFO   --- [main] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-06-03T06:47:21,260 INFO   --- [main] com.SwapifyBe.dao.auth.AuthDaoImpl(AuthDaoImpl.java:16) : Initializing AuthDaoImpl
+2025-06-03T06:47:21,271 INFO   --- [main] com.SwapifyBe.dao.advertisement.AdvertisementDaoImpl(AdvertisementDaoImpl.java:23) : Advertisement dao implementation is initializing
+2025-06-03T06:47:21,272 INFO   --- [main] com.SwapifyBe.dao.favorite.FavoritesDaoImpl(FavoritesDaoImpl.java:20) : Favorites dao implementation is initializing
+2025-06-03T06:47:21,274 INFO   --- [main] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:20) : Offer dao implementation is initializing
+2025-06-03T06:47:21,278 INFO   --- [main] com.SwapifyBe.dao.follower.FollowerDaoImpl(FollowerDaoImpl.java:20) : Followers dao implementation is initializing
+2025-06-03T06:47:21,281 INFO   --- [main] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:21) : User dao implementation is initializing
+2025-06-03T06:47:21,286 INFO   --- [main] com.SwapifyBe.dao.message.MessageDaoImpl(MessageDaoImpl.java:19) : Message dao implementation is initializing
+2025-06-03T06:47:21,292 INFO   --- [main] com.SwapifyBe.dao.user.UserDaoImpl(UserChatDaoImpl.java:20) : UserChatDaoImpl  implementation is initializing
+2025-06-03T06:47:21,297 INFO   --- [main] com.SwapifyBe.dao.BaseDao(BaseDao.java:25) : BaseDao initialized
+2025-06-03T06:47:21,299 INFO   --- [main] com.SwapifyBe.notification.PushMessage(PushMessage.java:54) : FirebaseApp initializing...
+2025-06-03T06:47:21,960 INFO   --- [main] com.SwapifyBe.notification.PushMessage(PushMessage.java:68) : FirebaseApp initialized
+2025-06-03T06:47:21,979 INFO   --- [main] com.SwapifyBe.service.NotificationService(NotificationService.java:25) : Initializing NotificationService
+2025-06-03T06:47:21,982 INFO   --- [main] com.SwapifyBe.service.SmsService(SmsService.java:33) : SmsService created
+2025-06-03T06:47:21,986 INFO   --- [main] com.SwapifyBe.service.CategoryService(CategoryService.java:19) : CategoryService created
+2025-06-03T06:47:22,050 INFO   --- [main] com.SwapifyBe.service.UserPermissionsService(UserPermissionsService.java:23) : UserPermissionsService created
+2025-06-03T06:47:22,052 INFO   --- [main] com.SwapifyBe.service.UserService(UserService.java:41) : Initializing UserService
+2025-06-03T06:47:22,061 INFO   --- [main] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:64) : Initializing AdvertisementService
+2025-06-03T06:47:22,067 INFO   --- [main] com.SwapifyBe.service.AuthService(AuthService.java:54) : Initializing AuthService
+2025-06-03T06:47:22,079 INFO   --- [main] com.SwapifyBe.service.FavoriteService(FavoriteService.java:37) : Initializing FavoriteService
+2025-06-03T06:47:22,081 INFO   --- [main] com.SwapifyBe.service.OfferService(OfferService.java:56) : Initializing OfferService
+2025-06-03T06:47:22,087 INFO   --- [main] com.SwapifyBe.service.MessageResendService(MessageResendService.java:25) : MessageResendService created
+2025-06-03T06:47:22,089 INFO   --- [main] com.SwapifyBe.service.AppLogService(AppLogService.java:49) : AppLogService created
+2025-06-03T06:47:22,090 INFO   --- [main] com.SwapifyBe.service.VideoService(VideoService.java:19) : Video Service created
+2025-06-03T06:47:22,094 INFO   --- [main] com.SwapifyBe.service.TokenService(TokenService.java:28) : Token Service created
+2025-06-03T06:47:22,099 INFO   --- [main] com.SwapifyBe.service.MessageService(MessageService.java:48) : MessageService created
+2025-06-03T06:47:22,105 INFO   --- [main] com.SwapifyBe.service.FollowerService(FollowerService.java:47) : FollowerService created
+2025-06-03T06:47:22,106 INFO   --- [main] com.SwapifyBe.service.OfferService(SearchService.java:28) : Initializing SearchService
+2025-06-03T06:47:22,107 INFO   --- [main] com.SwapifyBe.service.SubscriptionService(SubscriptionService.java:42) : SubscriptionService created
+2025-06-03T06:47:22,108 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:48) : Services started successfully
+2025-06-03T06:47:23,168 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(StartupInfoLogger.java:53) : Starting SwapifyBeApplication v0.0.1-SNAPSHOT using Java 17.0.15 with PID 1 (/app/app.jar started by root in /app)
+2025-06-03T06:47:23,171 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SpringApplication.java:652) : No active profile set, falling back to 1 default profile: "default"
+2025-06-03T06:47:28,268 INFO   --- [main] org.apache.coyote.http11.Http11NioProtocol(DirectJDKLog.java:173) : Initializing ProtocolHandler ["http-nio-1453"]
+2025-06-03T06:47:28,270 INFO   --- [main] org.apache.catalina.core.StandardService(DirectJDKLog.java:173) : Starting service [Tomcat]
+2025-06-03T06:47:28,271 INFO   --- [main] org.apache.catalina.core.StandardEngine(DirectJDKLog.java:173) : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-06-03T06:47:28,410 INFO   --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](DirectJDKLog.java:173) : Initializing Spring embedded WebApplicationContext
+2025-06-03T06:47:29,437 INFO   --- [main] com.SwapifyBe.controller.AppLogController(AppLogController.java:28) : AppLogController created
+2025-06-03T06:47:29,467 INFO   --- [main] com.SwapifyBe.controller.CategoryController(CategoryController.java:26) : CategoryController created
+2025-06-03T06:47:29,469 INFO   --- [main] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:22) : ConfigurationController created
+2025-06-03T06:47:29,486 INFO   --- [main] com.SwapifyBe.controller.FavoriteController(FavoriteController.java:30) : FavoriteController created
+2025-06-03T06:47:29,488 INFO   --- [main] com.SwapifyBe.controller.FollowerController(FollowerController.java:20) : FollowerController created
+2025-06-03T06:47:29,490 INFO   --- [main] com.SwapifyBe.service.FollowerService(FollowerService.java:47) : FollowerService created
+2025-06-03T06:47:29,493 INFO   --- [main] com.SwapifyBe.controller.MessageController(MessageController.java:25) : Message Controller created
+2025-06-03T06:47:29,505 INFO   --- [main] com.SwapifyBe.controller.NotificationController(NotificationController.java:22) : NotificationController created
+2025-06-03T06:47:29,508 INFO   --- [main] com.SwapifyBe.controller.OfferController(OfferController.java:27) : OfferController initialized
+2025-06-03T06:47:29,510 INFO   --- [main] com.SwapifyBe.controller.PaymentController(PaymentController.java:22) : Payment Controller created
+2025-06-03T06:47:29,511 INFO   --- [main] com.SwapifyBe.controller.SearchController(SearchController.java:23) : SearchController created
+2025-06-03T06:47:29,513 INFO   --- [main] com.SwapifyBe.controller.SubscriptionController(SubscriptionController.java:41) : SubscriptionController created
+2025-06-03T06:47:29,518 INFO   --- [main] com.SwapifyBe.controller.TokenController(TokenController.java:24) : Token Controller created
+2025-06-03T06:47:29,523 INFO   --- [main] com.SwapifyBe.controller.UserController(UserController.java:32) : UserController created
+2025-06-03T06:47:29,531 INFO   --- [main] com.SwapifyBe.controller.VideoController(VideoController.java:22) : Video Controller created
+2025-06-03T06:47:32,815 INFO   --- [main] org.apache.coyote.http11.Http11NioProtocol(DirectJDKLog.java:173) : Starting ProtocolHandler ["http-nio-1453"]
+2025-06-03T06:47:32,914 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(StartupInfoLogger.java:59) : Started SwapifyBeApplication in 10.626 seconds (process running for 29.374)
+2025-06-03T06:47:32,927 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:71) : Application started event
+2025-06-03T06:47:32,935 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:61) : Application ready event
+2025-06-03T06:47:34,628 INFO   --- [http-nio-1453-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](DirectJDKLog.java:173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-03T06:47:34,799 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 66ms
+2025-06-03T06:47:34,990 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 13ms
+2025-06-03T06:47:35,311 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/629/ufingdb2/xhr_streaming Request duration: 28ms
+2025-06-03T06:47:35,574 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/224/ndygtovo/xhr_streaming Request duration: 8ms
+2025-06-03T06:47:36,158 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/224/0f0tt0rw/xhr Request duration: 6ms
+2025-06-03T06:47:36,300 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/224/0f0tt0rw/xhr_send Request duration: 61ms
+2025-06-03T06:47:36,404 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/224/0f0tt0rw/xhr Request duration: 11ms
+2025-06-03T06:47:36,505 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/224/0f0tt0rw/xhr Request duration: 12ms
+2025-06-03T06:47:36,516 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/224/0f0tt0rw/xhr_send Request duration: 20ms
+2025-06-03T06:47:36,520 INFO   --- [clientInboundChannel-1] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T06:47:36,588 INFO   --- [clientInboundChannel-1] com.hazelcast.internal.partition.impl.PartitionStateManager(StandardLoggerFactory.java:56) : [172.17.0.2]:5701 [dev] [5.3.7] Initializing cluster partition table arrangement...
+2025-06-03T06:47:36,668 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/224/0f0tt0rw/xhr_send Request duration: 13ms
+2025-06-03T06:47:36,805 INFO   --- [clientInboundChannel-1] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:107) : Saving user to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T06:47:36,809 INFO   --- [clientInboundChannel-1] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:110) : User saved to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T06:47:38,083 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/629/riyvnyeu/xhr Request duration: 5ms
+2025-06-03T06:47:38,184 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/629/riyvnyeu/xhr_send Request duration: 5ms
+2025-06-03T06:47:38,353 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/629/riyvnyeu/xhr Request duration: 10ms
+2025-06-03T06:47:38,451 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/629/riyvnyeu/xhr Request duration: 1ms
+2025-06-03T06:47:38,455 INFO   --- [clientInboundChannel-2] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T06:47:38,459 INFO   --- [clientInboundChannel-2] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:107) : Saving user to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T06:47:38,460 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/224/0f0tt0rw/xhr_send Request duration: 15ms
+2025-06-03T06:47:38,465 INFO   --- [clientInboundChannel-2] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:110) : User saved to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T06:47:38,604 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/224/0f0tt0rw/xhr_send Request duration: 7ms
+2025-06-03T06:47:42,689 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:76) : Advertisement saving...
+2025-06-03T06:47:42,697 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.service.UserService(UserService.java:51) : Getting user
+2025-06-03T06:47:42,698 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:26) : Getting user from the database
+2025-06-03T06:47:42,734 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:32) : User retrieved from the database
+2025-06-03T06:47:42,737 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.service.UserService(UserService.java:59) : User retrieved
+2025-06-03T06:47:42,738 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:382) : Images directory created at: /app/images
+2025-06-03T06:47:44,365 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:197) : getAllAdvertisementUserId retrieving...
+2025-06-03T06:47:44,414 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:113) : Advertisement saved
+2025-06-03T06:47:44,520 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/add Request duration: 1986ms
+2025-06-03T06:47:57,718 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:142) : Advertisement updating...
+2025-06-03T06:47:57,721 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:219) : getAdvertisementUserId retrieving...
+2025-06-03T06:47:57,739 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:225) : getAdvertisementUserId retrieved
+2025-06-03T06:47:58,711 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/update Request duration: 1013ms
+2025-06-03T06:48:07,358 INFO   --- [clientInboundChannel-2] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:100) : Marking user ID as passive in Hazelcast: "3db865c2-80cf-484b-9a4b-d200753e2bc0"
+2025-06-03T06:48:07,363 INFO   --- [clientInboundChannel-2] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:114) : Saving user to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T06:48:07,365 INFO   --- [clientInboundChannel-2] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:117) : User saved to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T06:48:07,367 INFO   --- [clientInboundChannel-2] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:231) : WebSocket closed for user: "3db865c2-80cf-484b-9a4b-d200753e2bc0"
+2025-06-03T06:48:07,369 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/224/0f0tt0rw/xhr_send Request duration: 13ms
+2025-06-03T06:48:07,554 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/224/0f0tt0rw/xhr_send Request duration: 6ms
+2025-06-03T07:02:22,476 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 24ms
+2025-06-03T07:07:05,779 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 64ms
+2025-06-03T07:07:05,977 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/css/main.f029a054.css Request duration: 11ms
+2025-06-03T07:07:05,997 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/js/main.4e416a8b.js Request duration: 26ms
+2025-06-03T07:07:07,087 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 5ms
+2025-06-03T07:07:14,564 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ads.txt Request duration: 69ms
+2025-06-03T07:07:14,665 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/app-ads.txt Request duration: 12ms
+2025-06-03T07:07:14,773 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/sellers.json Request duration: 12ms
+2025-06-03T07:10:11,563 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 17ms
+2025-06-03T07:10:12,581 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/logo192.png Request duration: 8ms
+2025-06-03T07:10:28,294 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 7ms
+2025-06-03T07:10:38,447 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 9ms
+2025-06-03T08:00:10,905 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/robots.txt Request duration: 13ms
+2025-06-03T08:12:02,868 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.env Request duration: 60ms
+2025-06-03T08:12:03,197 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 2ms
+2025-06-03T08:30:00,139 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 23ms
+2025-06-03T08:37:45,412 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 9ms
+2025-06-03T08:43:36,795 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 12ms
+2025-06-03T08:43:36,922 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/manifest.json Request duration: 4ms
+2025-06-03T08:43:37,129 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/css/main.f029a054.css Request duration: 5ms
+2025-06-03T08:43:37,142 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/js/main.4e416a8b.js Request duration: 25ms
+2025-06-03T08:43:38,722 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 5ms
+2025-06-03T08:44:08,479 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/support Request duration: 20ms
+2025-06-03T08:44:08,605 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/manifest.json Request duration: 6ms
+2025-06-03T08:44:08,814 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/css/main.f029a054.css Request duration: 4ms
+2025-06-03T08:44:08,847 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/js/main.4e416a8b.js Request duration: 29ms
+2025-06-03T08:44:35,878 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:28) : Getting all configurations
+2025-06-03T08:44:35,880 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-06-03T08:44:35,880 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-06-03T08:44:35,888 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/configuration/getConfig Request duration: 11ms
+2025-06-03T08:44:36,078 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:39) : getErrorConfig all configurations
+2025-06-03T08:44:36,081 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:56) : ConfigurationService getErrorConfig
+2025-06-03T08:44:36,084 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.controller.CategoryController(CategoryController.java:32) : All categories retrieved
+2025-06-03T08:44:36,085 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.service.CategoryService(CategoryService.java:24) : Getting all categories
+2025-06-03T08:44:36,115 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/category/getAllCategories Request duration: 30ms
+2025-06-03T08:44:36,140 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/configuration/getErrorConfig Request duration: 62ms
+2025-06-03T08:44:36,247 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:234) : All advertisements retrieving...
+2025-06-03T08:44:36,257 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:249) : All advertisements retrieved
+2025-06-03T08:44:36,265 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/getAll Request duration: 19ms
+2025-06-03T08:44:43,998 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:234) : All advertisements retrieving...
+2025-06-03T08:44:44,004 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:249) : All advertisements retrieved
+2025-06-03T08:44:44,008 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/getAll Request duration: 10ms
+2025-06-03T08:44:49,310 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:290) : Pending advertisements retrieving...
+2025-06-03T08:44:49,376 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:305) : Pending advertisements retrieved
+2025-06-03T08:44:49,383 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/getPendingAd Request duration: 74ms
+2025-06-03T08:44:51,816 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/approveAd Request duration: 15ms
+2025-06-03T08:44:53,368 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/approveAd Request duration: 8ms
+2025-06-03T09:06:36,564 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 15ms
+2025-06-03T09:06:36,898 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 5ms
+2025-06-03T09:06:37,235 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/logo192.png Request duration: 5ms
+2025-06-03T09:06:50,089 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/wiki Request duration: 9ms
+2025-06-03T09:17:49,133 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/owa/auth/logon.aspx Request duration: 10ms
+2025-06-03T09:23:14,770 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/robots.txt Request duration: 6ms
+2025-06-03T09:23:15,064 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/app-ads.txt Request duration: 16ms
+2025-06-03T09:39:36,185 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 5ms
+2025-06-03T09:40:44,374 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/app-ads.txt Request duration: 4ms
+2025-06-03T09:54:46,233 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.env Request duration: 12ms
+2025-06-03T09:54:47,463 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 1ms
+2025-06-03T10:02:37,891 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/apple-touch-icon-precomposed.png Request duration: 8ms
+2025-06-03T10:02:37,894 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/support Request duration: 17ms
+2025-06-03T10:02:38,089 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/manifest.json Request duration: 4ms
+2025-06-03T10:02:38,136 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/apple-touch-icon.png Request duration: 10ms
+2025-06-03T10:02:38,187 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 10ms
+2025-06-03T10:02:38,190 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/support Request duration: 11ms
+2025-06-03T10:02:38,299 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/css/main.f029a054.css Request duration: 5ms
+2025-06-03T10:02:38,316 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/js/main.4e416a8b.js Request duration: 22ms
+2025-06-03T10:02:38,348 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 3ms
+2025-06-03T10:02:38,369 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/logo192.png Request duration: 15ms
+2025-06-03T10:13:35,417 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:28) : Getting all configurations
+2025-06-03T10:13:35,419 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-06-03T10:13:35,420 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-06-03T10:13:35,426 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/configuration/getConfig Request duration: 9ms
+2025-06-03T10:13:35,449 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.controller.CategoryController(CategoryController.java:32) : All categories retrieved
+2025-06-03T10:13:35,451 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.service.CategoryService(CategoryService.java:24) : Getting all categories
+2025-06-03T10:13:35,461 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/category/getAllCategories Request duration: 12ms
+2025-06-03T10:14:21,795 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 4ms
+2025-06-03T10:14:22,904 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/655/tcwyrw4x/xhr_streaming Request duration: 6ms
+2025-06-03T10:14:33,080 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:14:33,488 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/347/uz43ifgg/xhr_streaming Request duration: 2ms
+2025-06-03T10:14:41,315 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 3ms
+2025-06-03T10:14:41,763 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/100/5z4kogay/xhr_streaming Request duration: 1ms
+2025-06-03T10:14:45,334 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/100/murvg4hh/xhr Request duration: 5ms
+2025-06-03T10:14:50,642 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:14:51,335 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/856/p3ukt5uw/xhr_streaming Request duration: 2ms
+2025-06-03T10:15:00,368 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:15:00,852 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/926/tnak0rmw/xhr_streaming Request duration: 3ms
+2025-06-03T10:15:09,899 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:15:10,596 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/354/uaf14q0r/xhr_streaming Request duration: 3ms
+2025-06-03T10:15:19,689 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:15:20,733 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/323/m3cityjz/xhr_streaming Request duration: 1ms
+2025-06-03T10:15:21,996 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/323/knuupggg/xhr Request duration: 2ms
+2025-06-03T10:15:22,297 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/323/knuupggg/xhr_send Request duration: 3ms
+2025-06-03T10:15:22,471 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/323/knuupggg/xhr Request duration: 3ms
+2025-06-03T10:15:22,631 INFO   --- [clientInboundChannel-5] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:15:22,638 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/323/knuupggg/xhr_send Request duration: 8ms
+2025-06-03T10:15:22,634 ERROR  --- [clientInboundChannel-5] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:15:22,834 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/323/knuupggg/xhr Request duration: 2ms
+2025-06-03T10:15:22,927 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/323/knuupggg/xhr_send Request duration: 2ms
+2025-06-03T10:15:37,680 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/323/knuupggg/xhr Request duration: 1ms
+2025-06-03T10:15:46,637 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 12ms
+2025-06-03T10:15:48,266 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 0ms
+2025-06-03T10:15:48,566 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/956/t0yoxk4o/xhr_streaming Request duration: 4ms
+2025-06-03T10:15:51,403 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/956/52hndia1/xhr Request duration: 3ms
+2025-06-03T10:15:56,684 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:15:57,282 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/664/jfh5dsod/xhr_streaming Request duration: 2ms
+2025-06-03T10:15:59,585 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/664/fqnsdbna/xhr Request duration: 5ms
+2025-06-03T10:16:05,084 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:16:05,438 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/718/vtc0p1w2/xhr_streaming Request duration: 2ms
+2025-06-03T10:16:09,653 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/718/2ozcrrdw/xhr Request duration: 8ms
+2025-06-03T10:16:20,153 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:16:20,869 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/930/tvlchp4c/xhr_streaming Request duration: 11ms
+2025-06-03T10:16:22,760 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/930/fm4nlgqw/xhr Request duration: 5ms
+2025-06-03T10:16:23,104 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/930/fm4nlgqw/xhr Request duration: 0ms
+2025-06-03T10:16:23,166 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/930/fm4nlgqw/xhr_send Request duration: 9ms
+2025-06-03T10:16:23,388 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/930/fm4nlgqw/xhr Request duration: 1ms
+2025-06-03T10:16:23,588 INFO   --- [clientInboundChannel-5] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:16:23,589 ERROR  --- [clientInboundChannel-5] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:16:23,592 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/930/fm4nlgqw/xhr_send Request duration: 5ms
+2025-06-03T10:16:38,412 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/930/fm4nlgqw/xhr Request duration: 1ms
+2025-06-03T10:16:43,717 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:16:44,538 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/715/5vfygjrx/xhr_streaming Request duration: 3ms
+2025-06-03T10:16:46,048 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/715/vruvm5y5/xhr Request duration: 4ms
+2025-06-03T10:16:46,311 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/715/vruvm5y5/xhr Request duration: 1ms
+2025-06-03T10:16:46,423 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/715/vruvm5y5/xhr_send Request duration: 6ms
+2025-06-03T10:16:46,657 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/715/vruvm5y5/xhr Request duration: 1ms
+2025-06-03T10:16:46,695 INFO   --- [clientInboundChannel-5] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:16:46,696 ERROR  --- [clientInboundChannel-5] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:16:46,697 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/715/vruvm5y5/xhr_send Request duration: 3ms
+2025-06-03T10:17:01,738 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/715/vruvm5y5/xhr Request duration: 1ms
+2025-06-03T10:17:07,172 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:17:07,645 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/003/aqghwdqd/xhr_streaming Request duration: 6ms
+2025-06-03T10:17:10,249 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/003/4qeq2f12/xhr Request duration: 2ms
+2025-06-03T10:17:15,688 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 0ms
+2025-06-03T10:17:16,213 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/344/rwbgwxeo/xhr_streaming Request duration: 3ms
+2025-06-03T10:17:19,274 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/344/zsoso1yl/xhr Request duration: 5ms
+2025-06-03T10:17:24,472 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 0ms
+2025-06-03T10:17:24,930 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/260/es01qey0/xhr_streaming Request duration: 2ms
+2025-06-03T10:17:26,261 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/260/wk0un1o1/xhr Request duration: 2ms
+2025-06-03T10:17:26,541 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/260/wk0un1o1/xhr_send Request duration: 2ms
+2025-06-03T10:17:26,574 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/260/wk0un1o1/xhr Request duration: 1ms
+2025-06-03T10:17:26,723 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/260/wk0un1o1/xhr Request duration: 1ms
+2025-06-03T10:17:26,756 INFO   --- [clientInboundChannel-6] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:17:26,759 ERROR  --- [clientInboundChannel-6] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:17:26,760 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/260/wk0un1o1/xhr_send Request duration: 5ms
+2025-06-03T10:17:41,971 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/260/wk0un1o1/xhr Request duration: 1ms
+2025-06-03T10:17:47,196 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 2ms
+2025-06-03T10:17:47,667 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/957/41ngzbuj/xhr_streaming Request duration: 6ms
+2025-06-03T10:17:48,977 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/957/uk5fm5od/xhr Request duration: 3ms
+2025-06-03T10:17:49,163 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/957/uk5fm5od/xhr_send Request duration: 4ms
+2025-06-03T10:17:49,218 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/957/uk5fm5od/xhr Request duration: 1ms
+2025-06-03T10:17:49,393 INFO   --- [clientInboundChannel-6] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:17:49,394 ERROR  --- [clientInboundChannel-6] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:17:49,395 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/957/uk5fm5od/xhr_send Request duration: 3ms
+2025-06-03T10:17:49,598 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/957/uk5fm5od/xhr Request duration: 1ms
+2025-06-03T10:17:49,601 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/957/uk5fm5od/xhr_send Request duration: 1ms
+2025-06-03T10:18:04,440 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/957/uk5fm5od/xhr Request duration: 1ms
+2025-06-03T10:18:09,677 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:18:10,358 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/487/3rizuxui/xhr_streaming Request duration: 3ms
+2025-06-03T10:18:11,139 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/487/rhzf4s5s/xhr Request duration: 3ms
+2025-06-03T10:18:11,383 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/487/rhzf4s5s/xhr Request duration: 1ms
+2025-06-03T10:18:11,499 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/487/rhzf4s5s/xhr_send Request duration: 2ms
+2025-06-03T10:18:11,665 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/487/rhzf4s5s/xhr Request duration: 0ms
+2025-06-03T10:18:11,940 INFO   --- [clientInboundChannel-5] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:18:11,941 ERROR  --- [clientInboundChannel-5] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:18:11,942 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/487/rhzf4s5s/xhr_send Request duration: 4ms
+2025-06-03T10:18:31,895 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 2ms
+2025-06-03T10:18:32,244 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/247/hx2ayjr5/xhr_streaming Request duration: 3ms
+2025-06-03T10:18:34,099 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/247/eb1e22wa/xhr Request duration: 2ms
+2025-06-03T10:18:39,457 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 4ms
+2025-06-03T10:18:40,316 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/728/302guvwe/xhr_streaming Request duration: 2ms
+2025-06-03T10:18:42,108 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/728/veqvhjhu/xhr Request duration: 1ms
+2025-06-03T10:18:42,267 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/728/veqvhjhu/xhr_send Request duration: 5ms
+2025-06-03T10:18:42,306 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/728/veqvhjhu/xhr Request duration: 2ms
+2025-06-03T10:18:42,485 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/728/veqvhjhu/xhr Request duration: 1ms
+2025-06-03T10:18:42,687 INFO   --- [clientInboundChannel-6] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:18:42,688 ERROR  --- [clientInboundChannel-6] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:18:42,689 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/728/veqvhjhu/xhr_send Request duration: 3ms
+2025-06-03T10:18:42,896 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/728/veqvhjhu/xhr_send Request duration: 1ms
+2025-06-03T10:18:46,771 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:18:47,069 INFO   --- [clientInboundChannel-6] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:100) : Marking user ID as passive in Hazelcast: ""
+2025-06-03T10:18:47,071 ERROR  --- [clientInboundChannel-6] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:233) : Error closing WebSocket for user: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.closeConnection(WebSocketController.java:228) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:18:47,076 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/728/veqvhjhu/xhr_send Request duration: 8ms
+2025-06-03T10:18:47,298 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/728/veqvhjhu/xhr_send Request duration: 3ms
+2025-06-03T10:18:47,360 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/588/jaxnczj5/xhr_streaming Request duration: 1ms
+2025-06-03T10:18:48,139 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/588/oo4mv3ga/xhr Request duration: 1ms
+2025-06-03T10:18:48,320 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/588/oo4mv3ga/xhr_send Request duration: 7ms
+2025-06-03T10:18:48,395 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/588/oo4mv3ga/xhr Request duration: 0ms
+2025-06-03T10:18:48,589 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/588/oo4mv3ga/xhr Request duration: 0ms
+2025-06-03T10:18:48,795 INFO   --- [clientInboundChannel-5] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:18:48,795 ERROR  --- [clientInboundChannel-5] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:18:48,804 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/588/oo4mv3ga/xhr_send Request duration: 11ms
+2025-06-03T10:18:54,130 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:18:54,430 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/979/i5se2zsg/xhr_streaming Request duration: 1ms
+2025-06-03T10:18:55,722 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/979/pq13a1p5/xhr Request duration: 10ms
+2025-06-03T10:19:00,931 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:19:01,282 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/473/kuv5queg/xhr_streaming Request duration: 6ms
+2025-06-03T10:19:02,849 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/473/ac0pkfq0/xhr Request duration: 4ms
+2025-06-03T10:19:08,093 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:19:08,444 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/575/wjpbgcay/xhr_streaming Request duration: 3ms
+2025-06-03T10:19:09,964 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/575/npqksbfa/xhr Request duration: 4ms
+2025-06-03T10:19:10,099 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/575/npqksbfa/xhr_send Request duration: 1ms
+2025-06-03T10:19:10,363 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/575/npqksbfa/xhr Request duration: 2ms
+2025-06-03T10:19:10,531 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/575/npqksbfa/xhr Request duration: 0ms
+2025-06-03T10:19:10,533 INFO   --- [clientInboundChannel-6] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:19:10,533 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/575/npqksbfa/xhr_send Request duration: 7ms
+2025-06-03T10:19:10,534 ERROR  --- [clientInboundChannel-6] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:19:10,746 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/575/npqksbfa/xhr_send Request duration: 2ms
+2025-06-03T10:19:25,563 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/575/npqksbfa/xhr Request duration: 0ms
+2025-06-03T10:19:30,762 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:19:31,246 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/931/kyfhhmvc/xhr_streaming Request duration: 2ms
+2025-06-03T10:19:32,643 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/931/3ls4rlmq/xhr Request duration: 4ms
+2025-06-03T10:19:37,688 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:19:38,083 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/508/g4ciqxkk/xhr_streaming Request duration: 4ms
+2025-06-03T10:19:39,475 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/508/qqozj5an/xhr Request duration: 2ms
+2025-06-03T10:19:39,611 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/508/qqozj5an/xhr Request duration: 1ms
+2025-06-03T10:19:39,646 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/508/qqozj5an/xhr_send Request duration: 3ms
+2025-06-03T10:19:39,795 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/508/qqozj5an/xhr Request duration: 4ms
+2025-06-03T10:19:39,861 INFO   --- [clientInboundChannel-5] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:19:39,861 ERROR  --- [clientInboundChannel-5] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:19:39,862 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/508/qqozj5an/xhr_send Request duration: 2ms
+2025-06-03T10:19:54,827 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/508/qqozj5an/xhr Request duration: 1ms
+2025-06-03T10:20:00,046 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:20:00,546 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/096/1e2acxqs/xhr_streaming Request duration: 3ms
+2025-06-03T10:20:02,066 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/096/4zf21jxa/xhr Request duration: 4ms
+2025-06-03T10:20:02,232 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/096/4zf21jxa/xhr_send Request duration: 1ms
+2025-06-03T10:20:02,496 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/096/4zf21jxa/xhr Request duration: 1ms
+2025-06-03T10:20:02,655 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/096/4zf21jxa/xhr Request duration: 0ms
+2025-06-03T10:20:02,665 INFO   --- [clientInboundChannel-5] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:20:02,665 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/096/4zf21jxa/xhr_send Request duration: 2ms
+2025-06-03T10:20:02,666 ERROR  --- [clientInboundChannel-5] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:20:02,866 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/096/4zf21jxa/xhr_send Request duration: 1ms
+2025-06-03T10:20:17,697 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/096/4zf21jxa/xhr Request duration: 0ms
+2025-06-03T10:20:23,109 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:20:23,455 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/671/oqkyvptb/xhr_streaming Request duration: 6ms
+2025-06-03T10:20:26,166 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/671/zcxi4nn5/xhr Request duration: 2ms
+2025-06-03T10:20:31,452 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 0ms
+2025-06-03T10:20:31,773 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/263/gcylvgfg/xhr_streaming Request duration: 1ms
+2025-06-03T10:20:33,006 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/263/i0df1k0n/xhr Request duration: 1ms
+2025-06-03T10:20:38,255 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:20:38,712 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/211/pvoamofg/xhr_streaming Request duration: 1ms
+2025-06-03T10:20:40,317 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/211/ckovuqdl/xhr Request duration: 2ms
+2025-06-03T10:20:45,561 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:20:45,975 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/942/x2h32rxs/xhr_streaming Request duration: 4ms
+2025-06-03T10:20:47,437 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/942/0acg1jj1/xhr Request duration: 1ms
+2025-06-03T10:20:47,596 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/942/0acg1jj1/xhr Request duration: 2ms
+2025-06-03T10:20:47,640 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/942/0acg1jj1/xhr_send Request duration: 5ms
+2025-06-03T10:20:47,789 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/942/0acg1jj1/xhr Request duration: 1ms
+2025-06-03T10:20:47,834 INFO   --- [clientInboundChannel-6] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:20:47,834 ERROR  --- [clientInboundChannel-6] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:20:47,836 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/942/0acg1jj1/xhr_send Request duration: 4ms
+2025-06-03T10:21:02,827 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/942/0acg1jj1/xhr Request duration: 3ms
+2025-06-03T10:21:08,078 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:21:08,657 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/846/etulwnku/xhr_streaming Request duration: 12ms
+2025-06-03T10:21:09,935 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/846/lq0tusz1/xhr Request duration: 1ms
+2025-06-03T10:21:10,086 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/846/lq0tusz1/xhr Request duration: 2ms
+2025-06-03T10:21:10,136 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/846/lq0tusz1/xhr_send Request duration: 4ms
+2025-06-03T10:21:10,269 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/846/lq0tusz1/xhr Request duration: 0ms
+2025-06-03T10:21:10,363 INFO   --- [clientInboundChannel-5] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:21:10,363 ERROR  --- [clientInboundChannel-5] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:21:10,364 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/846/lq0tusz1/xhr_send Request duration: 3ms
+2025-06-03T10:21:25,299 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/846/lq0tusz1/xhr Request duration: 2ms
+2025-06-03T10:21:30,492 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:21:31,135 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/359/xv4oc4wu/xhr_streaming Request duration: 4ms
+2025-06-03T10:21:31,997 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/359/j1n1wnrr/xhr Request duration: 1ms
+2025-06-03T10:21:37,134 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:21:37,536 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/651/m1fni1cp/xhr_streaming Request duration: 2ms
+2025-06-03T10:21:38,795 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/651/1iqqasvd/xhr Request duration: 6ms
+2025-06-03T10:21:39,025 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/651/1iqqasvd/xhr_send Request duration: 2ms
+2025-06-03T10:21:39,131 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/651/1iqqasvd/xhr Request duration: 2ms
+2025-06-03T10:21:39,333 INFO   --- [clientInboundChannel-6] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:21:39,336 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/651/1iqqasvd/xhr Request duration: 1ms
+2025-06-03T10:21:39,336 ERROR  --- [clientInboundChannel-6] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:21:39,341 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/651/1iqqasvd/xhr_send Request duration: 9ms
+2025-06-03T10:21:39,538 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/651/1iqqasvd/xhr_send Request duration: 2ms
+2025-06-03T10:21:55,116 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 0ms
+2025-06-03T10:21:55,587 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/766/h2w1aifs/xhr_streaming Request duration: 1ms
+2025-06-03T10:21:57,327 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/766/s12zc4kc/xhr Request duration: 5ms
+2025-06-03T10:21:57,640 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/766/s12zc4kc/xhr_send Request duration: 1ms
+2025-06-03T10:21:57,671 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/766/s12zc4kc/xhr Request duration: 1ms
+2025-06-03T10:21:57,834 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/766/s12zc4kc/xhr Request duration: 1ms
+2025-06-03T10:21:57,836 INFO   --- [clientInboundChannel-6] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:21:57,836 ERROR  --- [clientInboundChannel-6] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:21:57,838 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/766/s12zc4kc/xhr_send Request duration: 4ms
+2025-06-03T10:22:12,869 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/766/s12zc4kc/xhr Request duration: 1ms
+2025-06-03T10:22:18,065 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:22:18,448 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/935/q1b1qjrw/xhr_streaming Request duration: 8ms
+2025-06-03T10:22:19,471 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/935/fso111bd/xhr Request duration: 1ms
+2025-06-03T10:22:19,623 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/935/fso111bd/xhr_send Request duration: 3ms
+2025-06-03T10:22:19,704 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/935/fso111bd/xhr Request duration: 1ms
+2025-06-03T10:22:19,851 INFO   --- [clientInboundChannel-6] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:22:19,852 ERROR  --- [clientInboundChannel-6] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:22:19,854 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/935/fso111bd/xhr_send Request duration: 3ms
+2025-06-03T10:22:19,859 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/935/fso111bd/xhr Request duration: 0ms
+2025-06-03T10:22:20,252 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/935/fso111bd/xhr_send Request duration: 1ms
+2025-06-03T10:22:34,887 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/935/fso111bd/xhr Request duration: 0ms
+2025-06-03T10:22:40,107 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T10:22:40,557 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/812/0z5mj0kt/xhr_streaming Request duration: 2ms
+2025-06-03T10:22:41,838 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/812/rpcjm2h0/xhr Request duration: 2ms
+2025-06-03T10:22:42,005 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/812/rpcjm2h0/xhr_send Request duration: 1ms
+2025-06-03T10:22:42,111 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/812/rpcjm2h0/xhr Request duration: 1ms
+2025-06-03T10:22:42,283 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/812/rpcjm2h0/xhr Request duration: 2ms
+2025-06-03T10:22:42,285 INFO   --- [clientInboundChannel-6] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T10:22:42,285 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/812/rpcjm2h0/xhr_send Request duration: 1ms
+2025-06-03T10:22:42,286 ERROR  --- [clientInboundChannel-6] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T10:22:42,476 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/812/rpcjm2h0/xhr_send Request duration: 2ms
+2025-06-03T10:22:57,327 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/812/rpcjm2h0/xhr Request duration: 2ms
+2025-06-03T10:24:14,275 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 10ms
+2025-06-03T10:38:12,914 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 15ms
+2025-06-03T10:51:41,397 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 8ms
+2025-06-03T10:51:41,450 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/js/main.4e416a8b.js Request duration: 10ms
+2025-06-03T10:51:41,536 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/css/main.f029a054.css Request duration: 3ms
+2025-06-03T10:51:43,349 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/robots.txt Request duration: 3ms
+2025-06-03T10:55:06,965 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/app-ads.txt Request duration: 2ms
+2025-06-03T10:55:17,451 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 3ms
+2025-06-03T10:59:13,664 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 4ms
+2025-06-03T11:01:44,705 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.env Request duration: 6ms
+2025-06-03T11:01:44,906 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 15ms
+2025-06-03T11:01:45,014 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.env Request duration: 3ms
+2025-06-03T11:01:45,130 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 1ms
+2025-06-03T11:05:49,406 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 12ms
+2025-06-03T11:08:17,141 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/app-ads.txt Request duration: 4ms
+2025-06-03T11:10:13,022 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 4ms
+2025-06-03T11:27:38,480 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.env Request duration: 7ms
+2025-06-03T11:27:39,721 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 0ms
+2025-06-03T11:32:37,958 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 12ms
+2025-06-03T11:34:54,504 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 4ms
+2025-06-03T11:34:54,517 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 2ms
+2025-06-03T11:34:54,524 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 14ms
+2025-06-03T11:34:54,538 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 4ms
+2025-06-03T11:49:03,249 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 4ms
+2025-06-03T11:58:53,983 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 2ms
+2025-06-03T12:15:57,228 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.git/config Request duration: 3ms
+2025-06-03T12:34:47,715 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 10ms
+2025-06-03T12:53:43,457 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.git/config Request duration: 12ms
+2025-06-03T13:15:02,180 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 5ms
+2025-06-03T13:18:53,977 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 5ms
+2025-06-03T13:23:16,269 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/robots.txt Request duration: 4ms
+2025-06-03T13:23:16,604 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/app-ads.txt Request duration: 3ms
+2025-06-03T13:24:25,385 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 4ms
+2025-06-03T13:25:02,253 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 5ms
+2025-06-03T13:37:20,434 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 6ms
+2025-06-03T13:50:01,041 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 3ms
+2025-06-03T13:59:25,732 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.env Request duration: 6ms
+2025-06-03T13:59:26,079 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 0ms
+2025-06-03T14:20:43,544 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 6ms
+2025-06-03T14:59:36,312 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/app-ads.txt Request duration: 3ms
+2025-06-03T15:00:04,177 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 16ms
+2025-06-03T15:00:04,237 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/js/main.4e416a8b.js Request duration: 16ms
+2025-06-03T15:00:04,416 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 6ms
+2025-06-03T15:00:04,470 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/js/main.4e416a8b.js Request duration: 15ms
+2025-06-03T15:00:04,734 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 5ms
+2025-06-03T15:00:04,790 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/js/main.4e416a8b.js Request duration: 16ms
+2025-06-03T15:00:04,998 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 8ms
+2025-06-03T15:00:05,056 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/js/main.4e416a8b.js Request duration: 16ms
+2025-06-03T15:27:32,308 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.env Request duration: 7ms
+2025-06-03T15:27:33,609 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 1ms
+2025-06-03T15:33:46,080 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 4ms
+2025-06-03T16:08:11,255 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/app-ads.txt Request duration: 13ms
+2025-06-03T16:14:14,165 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/backup.zip Request duration: 16ms
+2025-06-03T16:14:14,189 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.env Request duration: 19ms
+2025-06-03T16:14:14,189 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/phpinfo.php Request duration: 9ms
+2025-06-03T16:14:14,189 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/_vti_pvt/service.pwd Request duration: 6ms
+2025-06-03T16:14:14,189 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/docker-compose.yml Request duration: 10ms
+2025-06-03T16:14:14,189 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/web.config Request duration: 12ms
+2025-06-03T16:14:14,190 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.env.production Request duration: 16ms
+2025-06-03T16:14:14,190 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/config.yml Request duration: 19ms
+2025-06-03T16:14:14,190 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/wp-admin/setup-config.php Request duration: 6ms
+2025-06-03T16:14:14,190 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/config.json Request duration: 43ms
+2025-06-03T16:14:14,211 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/settings.py Request duration: 7ms
+2025-06-03T16:14:14,233 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/db/schema.rb Request duration: 9ms
+2025-06-03T16:14:14,234 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/config.php Request duration: 8ms
+2025-06-03T16:14:14,234 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 14ms
+2025-06-03T16:14:14,234 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/user_secrets.yml Request duration: 7ms
+2025-06-03T16:14:14,234 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/wp-config.php Request duration: 19ms
+2025-06-03T16:14:14,234 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/config.yaml Request duration: 11ms
+2025-06-03T16:14:14,240 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/.env Request duration: 23ms
+2025-06-03T16:14:14,244 INFO   --- [http-nio-1453-exec-11] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/feed Request duration: 38ms
+2025-06-03T16:14:14,245 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/cloud-config.yml Request duration: 43ms
+2025-06-03T16:14:14,253 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.ssh/id_ed25519 Request duration: 23ms
+2025-06-03T16:14:14,259 INFO   --- [http-nio-1453-exec-12] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/etc/ssl/private/server.key Request duration: 6ms
+2025-06-03T16:14:14,297 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/database_backup.sql Request duration: 22ms
+2025-06-03T16:14:14,297 INFO   --- [http-nio-1453-exec-12] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/backup.sql Request duration: 16ms
+2025-06-03T16:14:14,297 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.ssh/id_rsa Request duration: 29ms
+2025-06-03T16:14:14,301 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/dump.sql Request duration: 25ms
+2025-06-03T16:14:14,302 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/config.xml Request duration: 38ms
+2025-06-03T16:14:14,302 INFO   --- [http-nio-1453-exec-11] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/config/production.json Request duration: 24ms
+2025-06-03T16:14:14,304 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.aws/credentials Request duration: 32ms
+2025-06-03T16:14:14,305 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.git/HEAD Request duration: 32ms
+2025-06-03T16:14:14,304 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.ssh/id_ecdsa Request duration: 36ms
+2025-06-03T16:14:14,306 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.vscode/sftp.json Request duration: 30ms
+2025-06-03T16:14:14,306 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/server.key Request duration: 41ms
+2025-06-03T16:14:14,314 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/database.sql Request duration: 35ms
+2025-06-03T16:14:14,324 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/secrets.json Request duration: 8ms
+2025-06-03T16:14:14,325 INFO   --- [http-nio-1453-exec-12] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/server-status Request duration: 6ms
+2025-06-03T16:14:14,327 INFO   --- [http-nio-1453-exec-13] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.svn/wc.db Request duration: 3ms
+2025-06-03T16:14:14,345 INFO   --- [http-nio-1453-exec-11] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/backup.tar.gz Request duration: 7ms
+2025-06-03T16:45:57,502 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 5ms
+2025-06-03T16:49:19,594 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 4ms
+2025-06-03T17:12:51,776 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:290) : Pending advertisements retrieving...
+2025-06-03T17:12:51,795 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:305) : Pending advertisements retrieved
+2025-06-03T17:12:51,796 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/getPendingAd Request duration: 21ms
+2025-06-03T17:12:53,723 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/approveAd Request duration: 3ms
