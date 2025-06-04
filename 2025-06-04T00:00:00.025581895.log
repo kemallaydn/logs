@@ -1,0 +1,257 @@
+2025-06-03T17:19:11,954 INFO   --- [main] org.hibernate.jpa.internal.util.LogHelper(LogHelper.java:31) : HHH000204: Processing PersistenceUnitInfo [name: myPersistenceUnit]
+2025-06-03T17:19:12,185 INFO   --- [main] org.hibernate.Version(Version.java:44) : HHH000412: Hibernate ORM core version 6.2.7.Final
+2025-06-03T17:19:12,195 INFO   --- [main] org.hibernate.cfg.Environment(Environment.java:191) : HHH000406: Using bytecode reflection optimizer
+2025-06-03T17:19:12,213 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:690) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.user], use [jakarta.persistence.jdbc.user] instead
+2025-06-03T17:19:12,224 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:712) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.password], use [jakarta.persistence.jdbc.password] instead
+2025-06-03T17:19:12,225 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:1027) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.url], use [jakarta.persistence.jdbc.url] instead
+2025-06-03T17:19:12,225 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:1034) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.driver], use [jakarta.persistence.jdbc.driver] instead
+2025-06-03T17:19:14,976 INFO   --- [main] org.hibernate.bytecode.internal.BytecodeProviderInitiator(BytecodeProviderInitiator.java:53) : HHH000021: Bytecode provider name : bytebuddy
+2025-06-03T17:19:17,292 WARN   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:80) : HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-03T17:19:17,309 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:139) : HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-06-03T17:19:17,310 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:161) : HHH10001012: Connecting with JDBC URL [jdbc:postgresql://34.245.38.121:5432/swapiffy]
+2025-06-03T17:19:17,314 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:170) : HHH10001001: Connection properties: {password=****, user=Kemal}
+2025-06-03T17:19:17,315 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:174) : HHH10001003: Autocommit mode: false
+2025-06-03T17:19:17,317 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:366) : HHH10001115: Connection pool size: 20 (min=1)
+2025-06-03T17:19:17,824 INFO   --- [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator(JtaPlatformInitiator.java:51) : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-06-03T17:19:19,446 INFO   --- [main] org.hibernate.orm.connections.access(DdlTransactionIsolatorNonJtaImpl.java:52) : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6e0d619b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-03T17:19:19,925 INFO   --- [main] com.SwapifyBe.dao.category.CategoryDaoImpl(CategoryDaoImpl.java:18) : Initializing CategoryDaoImpl
+2025-06-03T17:19:20,253 INFO   --- [main] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:21) : Initializing ConfigurationDaoImpl
+2025-06-03T17:19:20,254 INFO   --- [main] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:23) : ConfigurationService created
+2025-06-03T17:19:20,254 INFO   --- [main] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-06-03T17:19:20,254 INFO   --- [main] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-06-03T17:19:26,729 INFO   --- [main] com.SwapifyBe.dao.auth.AuthDaoImpl(AuthDaoImpl.java:16) : Initializing AuthDaoImpl
+2025-06-03T17:19:26,731 INFO   --- [main] com.SwapifyBe.dao.advertisement.AdvertisementDaoImpl(AdvertisementDaoImpl.java:23) : Advertisement dao implementation is initializing
+2025-06-03T17:19:26,733 INFO   --- [main] com.SwapifyBe.dao.favorite.FavoritesDaoImpl(FavoritesDaoImpl.java:20) : Favorites dao implementation is initializing
+2025-06-03T17:19:26,736 INFO   --- [main] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:20) : Offer dao implementation is initializing
+2025-06-03T17:19:26,737 INFO   --- [main] com.SwapifyBe.dao.follower.FollowerDaoImpl(FollowerDaoImpl.java:20) : Followers dao implementation is initializing
+2025-06-03T17:19:26,741 INFO   --- [main] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:21) : User dao implementation is initializing
+2025-06-03T17:19:26,743 INFO   --- [main] com.SwapifyBe.dao.message.MessageDaoImpl(MessageDaoImpl.java:19) : Message dao implementation is initializing
+2025-06-03T17:19:26,747 INFO   --- [main] com.SwapifyBe.dao.user.UserDaoImpl(UserChatDaoImpl.java:20) : UserChatDaoImpl  implementation is initializing
+2025-06-03T17:19:26,748 INFO   --- [main] com.SwapifyBe.dao.BaseDao(BaseDao.java:25) : BaseDao initialized
+2025-06-03T17:19:26,757 INFO   --- [main] com.SwapifyBe.notification.PushMessage(PushMessage.java:54) : FirebaseApp initializing...
+2025-06-03T17:19:27,438 INFO   --- [main] com.SwapifyBe.notification.PushMessage(PushMessage.java:68) : FirebaseApp initialized
+2025-06-03T17:19:27,441 INFO   --- [main] com.SwapifyBe.service.NotificationService(NotificationService.java:25) : Initializing NotificationService
+2025-06-03T17:19:27,442 INFO   --- [main] com.SwapifyBe.service.SmsService(SmsService.java:33) : SmsService created
+2025-06-03T17:19:27,451 INFO   --- [main] com.SwapifyBe.service.CategoryService(CategoryService.java:19) : CategoryService created
+2025-06-03T17:19:27,505 INFO   --- [main] com.SwapifyBe.service.UserPermissionsService(UserPermissionsService.java:23) : UserPermissionsService created
+2025-06-03T17:19:27,525 INFO   --- [main] com.SwapifyBe.service.UserService(UserService.java:41) : Initializing UserService
+2025-06-03T17:19:27,538 INFO   --- [main] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:64) : Initializing AdvertisementService
+2025-06-03T17:19:27,539 INFO   --- [main] com.SwapifyBe.service.AuthService(AuthService.java:54) : Initializing AuthService
+2025-06-03T17:19:27,541 INFO   --- [main] com.SwapifyBe.service.FavoriteService(FavoriteService.java:37) : Initializing FavoriteService
+2025-06-03T17:19:27,551 INFO   --- [main] com.SwapifyBe.service.OfferService(OfferService.java:56) : Initializing OfferService
+2025-06-03T17:19:27,554 INFO   --- [main] com.SwapifyBe.service.MessageResendService(MessageResendService.java:25) : MessageResendService created
+2025-06-03T17:19:27,555 INFO   --- [main] com.SwapifyBe.service.AppLogService(AppLogService.java:49) : AppLogService created
+2025-06-03T17:19:27,556 INFO   --- [main] com.SwapifyBe.service.VideoService(VideoService.java:19) : Video Service created
+2025-06-03T17:19:27,563 INFO   --- [main] com.SwapifyBe.service.TokenService(TokenService.java:28) : Token Service created
+2025-06-03T17:19:27,566 INFO   --- [main] com.SwapifyBe.service.MessageService(MessageService.java:48) : MessageService created
+2025-06-03T17:19:27,574 INFO   --- [main] com.SwapifyBe.service.FollowerService(FollowerService.java:47) : FollowerService created
+2025-06-03T17:19:27,576 INFO   --- [main] com.SwapifyBe.service.OfferService(SearchService.java:28) : Initializing SearchService
+2025-06-03T17:19:27,577 INFO   --- [main] com.SwapifyBe.service.SubscriptionService(SubscriptionService.java:42) : SubscriptionService created
+2025-06-03T17:19:27,582 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:48) : Services started successfully
+2025-06-03T17:19:28,677 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(StartupInfoLogger.java:53) : Starting SwapifyBeApplication v0.0.1-SNAPSHOT using Java 17.0.15 with PID 1 (/app/app.jar started by root in /app)
+2025-06-03T17:19:28,681 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SpringApplication.java:652) : No active profile set, falling back to 1 default profile: "default"
+2025-06-03T17:19:33,560 INFO   --- [main] org.apache.coyote.http11.Http11NioProtocol(DirectJDKLog.java:173) : Initializing ProtocolHandler ["http-nio-1453"]
+2025-06-03T17:19:33,563 INFO   --- [main] org.apache.catalina.core.StandardService(DirectJDKLog.java:173) : Starting service [Tomcat]
+2025-06-03T17:19:33,574 INFO   --- [main] org.apache.catalina.core.StandardEngine(DirectJDKLog.java:173) : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-06-03T17:19:33,696 INFO   --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](DirectJDKLog.java:173) : Initializing Spring embedded WebApplicationContext
+2025-06-03T17:19:34,734 INFO   --- [main] com.SwapifyBe.controller.AppLogController(AppLogController.java:28) : AppLogController created
+2025-06-03T17:19:34,782 INFO   --- [main] com.SwapifyBe.controller.CategoryController(CategoryController.java:26) : CategoryController created
+2025-06-03T17:19:34,795 INFO   --- [main] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:22) : ConfigurationController created
+2025-06-03T17:19:34,808 INFO   --- [main] com.SwapifyBe.controller.FavoriteController(FavoriteController.java:30) : FavoriteController created
+2025-06-03T17:19:34,816 INFO   --- [main] com.SwapifyBe.controller.FollowerController(FollowerController.java:20) : FollowerController created
+2025-06-03T17:19:34,817 INFO   --- [main] com.SwapifyBe.service.FollowerService(FollowerService.java:47) : FollowerService created
+2025-06-03T17:19:34,820 INFO   --- [main] com.SwapifyBe.controller.MessageController(MessageController.java:25) : Message Controller created
+2025-06-03T17:19:34,825 INFO   --- [main] com.SwapifyBe.controller.NotificationController(NotificationController.java:22) : NotificationController created
+2025-06-03T17:19:34,827 INFO   --- [main] com.SwapifyBe.controller.OfferController(OfferController.java:27) : OfferController initialized
+2025-06-03T17:19:34,832 INFO   --- [main] com.SwapifyBe.controller.PaymentController(PaymentController.java:22) : Payment Controller created
+2025-06-03T17:19:34,844 INFO   --- [main] com.SwapifyBe.controller.SearchController(SearchController.java:23) : SearchController created
+2025-06-03T17:19:34,845 INFO   --- [main] com.SwapifyBe.controller.SubscriptionController(SubscriptionController.java:41) : SubscriptionController created
+2025-06-03T17:19:34,849 INFO   --- [main] com.SwapifyBe.controller.TokenController(TokenController.java:24) : Token Controller created
+2025-06-03T17:19:34,854 INFO   --- [main] com.SwapifyBe.controller.UserController(UserController.java:32) : UserController created
+2025-06-03T17:19:34,858 INFO   --- [main] com.SwapifyBe.controller.VideoController(VideoController.java:22) : Video Controller created
+2025-06-03T17:19:38,189 INFO   --- [main] org.apache.coyote.http11.Http11NioProtocol(DirectJDKLog.java:173) : Starting ProtocolHandler ["http-nio-1453"]
+2025-06-03T17:19:38,317 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(StartupInfoLogger.java:59) : Started SwapifyBeApplication in 10.539 seconds (process running for 29.524)
+2025-06-03T17:19:38,336 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:71) : Application started event
+2025-06-03T17:19:38,340 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:61) : Application ready event
+2025-06-03T17:20:20,326 INFO   --- [http-nio-1453-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](DirectJDKLog.java:173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-03T17:20:20,490 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:290) : Pending advertisements retrieving...
+2025-06-03T17:20:20,684 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:305) : Pending advertisements retrieved
+2025-06-03T17:20:20,874 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/getPendingAd Request duration: 451ms
+2025-06-03T17:20:23,454 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/approveAd Request duration: 92ms
+2025-06-03T17:20:48,651 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/approveAd Request duration: 5ms
+2025-06-03T17:20:55,160 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:28) : Getting all configurations
+2025-06-03T17:20:55,162 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-06-03T17:20:55,162 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-06-03T17:20:55,175 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/configuration/getConfig Request duration: 25ms
+2025-06-03T17:20:55,303 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:39) : getErrorConfig all configurations
+2025-06-03T17:20:55,307 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:56) : ConfigurationService getErrorConfig
+2025-06-03T17:20:55,317 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/configuration/getErrorConfig Request duration: 15ms
+2025-06-03T17:20:55,322 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.controller.CategoryController(CategoryController.java:32) : All categories retrieved
+2025-06-03T17:20:55,324 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.service.CategoryService(CategoryService.java:24) : Getting all categories
+2025-06-03T17:20:55,340 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/category/getAllCategories Request duration: 19ms
+2025-06-03T17:20:55,430 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:234) : All advertisements retrieving...
+2025-06-03T17:20:55,449 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:249) : All advertisements retrieved
+2025-06-03T17:20:55,452 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/getAll Request duration: 23ms
+2025-06-03T17:22:32,814 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 11ms
+2025-06-03T17:22:33,403 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/735/a1wy1f1n/xhr_streaming Request duration: 26ms
+2025-06-03T17:22:37,574 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/735/i4gduwl3/xhr Request duration: 6ms
+2025-06-03T17:22:37,693 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/735/i4gduwl3/xhr_send Request duration: 26ms
+2025-06-03T17:22:37,813 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/735/i4gduwl3/xhr Request duration: 6ms
+2025-06-03T17:22:37,921 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/735/i4gduwl3/xhr_send Request duration: 9ms
+2025-06-03T17:22:37,929 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/735/i4gduwl3/xhr Request duration: 11ms
+2025-06-03T17:22:37,934 INFO   --- [clientInboundChannel-1] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 
+2025-06-03T17:22:37,975 INFO   --- [clientInboundChannel-1] com.hazelcast.internal.partition.impl.PartitionStateManager(StandardLoggerFactory.java:56) : [172.17.0.2]:5701 [dev] [5.3.7] Initializing cluster partition table arrangement...
+2025-06-03T17:22:38,062 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/735/i4gduwl3/xhr_send Request duration: 5ms
+2025-06-03T17:22:38,178 ERROR  --- [clientInboundChannel-1] com.SwapifyBe.websocket.WebSocketController(WebSocketController.java:195) : Error saving active user to hazelcast: ""
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString1(UUID.java:280) ~[?:?]
+	at java.base/java.util.UUID.fromString(UUID.java:258) ~[?:?]
+	at com.SwapifyBe.websocket.WebSocketController.saveActiveUser(WebSocketController.java:191) [!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:568) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:530) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:152) [spring-messaging-6.2.3.jar!/:6.2.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-03T17:22:54,017 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.service.AuthService(AuthService.java:217) : Logging in user null 
+2025-06-03T17:22:54,286 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.service.AuthService(AuthService.java:235) : User logged in
+2025-06-03T17:22:54,380 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/auth/login Request duration: 430ms
+2025-06-03T17:22:55,272 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.service.UserService(UserService.java:225) : Adding user device infocom.SwapifyBe.entity.Device@31ecfab8
+2025-06-03T17:22:55,363 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/user/saveDevice Request duration: 108ms
+2025-06-03T17:22:55,480 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:59) : Getting FCM token from Hazelcast for ID: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T17:22:55,494 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/token/alreadyExistsHazelcastFcmToken Request duration: 31ms
+2025-06-03T17:22:55,573 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.service.OfferService(OfferService.java:219) : Fetching received offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T17:22:55,583 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:87) : Getting offers from the database
+2025-06-03T17:22:55,603 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:93) : Offers retrieved from the database
+2025-06-03T17:22:55,598 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.service.OfferService(OfferService.java:216) : Fetching sent offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T17:22:55,605 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:68) : Getting offers from the database
+2025-06-03T17:22:55,627 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.controller.NotificationController(NotificationController.java:28) : Getting notifications
+2025-06-03T17:22:55,634 WARN   --- [http-nio-1453-exec-10] com.SwapifyBe.service.OfferService(OfferService.java:193) : No offers found for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T17:22:55,638 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:234) : All advertisements retrieving...
+2025-06-03T17:22:55,639 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T17:22:55,645 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/offer/getOffers Request duration: 73ms
+2025-06-03T17:22:55,650 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/message/getChatUsers Request duration: 32ms
+2025-06-03T17:22:55,672 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:74) : Offers retrieved from the database
+2025-06-03T17:22:55,676 WARN   --- [http-nio-1453-exec-1] com.SwapifyBe.service.OfferService(OfferService.java:193) : No offers found for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T17:22:55,676 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T17:22:55,696 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/offer/getOffers Request duration: 103ms
+2025-06-03T17:22:55,709 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:249) : All advertisements retrieved
+2025-06-03T17:22:55,716 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/getAll Request duration: 93ms
+2025-06-03T17:22:55,758 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:197) : getAllAdvertisementUserId retrieving...
+2025-06-03T17:22:55,795 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/favorite/getAllFavorite Request duration: 51ms
+2025-06-03T17:22:55,798 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/get Request duration: 42ms
+2025-06-03T17:22:55,806 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/follower/getFollower Request duration: 41ms
+2025-06-03T17:22:55,810 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/notification/getNotifications Request duration: 184ms
+2025-06-03T17:22:55,820 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/follower/getFollowing Request duration: 19ms
+2025-06-03T17:22:55,897 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/token/getFcmToken Request duration: 18ms
+2025-06-03T17:22:55,995 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:50) : Saving FCM token to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - fozx-Fg6TkL9gTLwAIgrkN:APA91bH3V7zGywDAb7mJaTL--r6sDUZ8YdbuvBV4iFD6ApVgAvd65HodvWSQmrzhwV9Jh9RQ45tR24KqFFmPuV4YXuO3VeLKTdodV5fNb7siHMtjZpEK-zI
+2025-06-03T17:22:55,996 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:53) : FCM token saved to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - fozx-Fg6TkL9gTLwAIgrkN:APA91bH3V7zGywDAb7mJaTL--r6sDUZ8YdbuvBV4iFD6ApVgAvd65HodvWSQmrzhwV9Jh9RQ45tR24KqFFmPuV4YXuO3VeLKTdodV5fNb7siHMtjZpEK-zI
+2025-06-03T17:22:55,999 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/token/updateFcmToken Request duration: 20ms
+2025-06-03T17:23:16,939 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/robots.txt Request duration: 16ms
+2025-06-03T17:23:19,396 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/app-ads.txt Request duration: 17ms
+2025-06-03T17:23:43,038 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/info Request duration: 1ms
+2025-06-03T17:23:43,655 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/680/zvbyr4se/xhr_streaming Request duration: 6ms
+2025-06-03T17:23:44,263 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/680/enrkpyc1/xhr Request duration: 3ms
+2025-06-03T17:23:44,355 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/680/enrkpyc1/xhr_send Request duration: 5ms
+2025-06-03T17:23:44,522 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/680/enrkpyc1/xhr Request duration: 5ms
+2025-06-03T17:23:44,619 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/680/enrkpyc1/xhr Request duration: 2ms
+2025-06-03T17:23:44,621 INFO   --- [clientInboundChannel-4] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:86) : Saving user ID as active in Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T17:23:44,621 INFO   --- [clientInboundChannel-4] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:107) : Saving user to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T17:23:44,622 INFO   --- [clientInboundChannel-4] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:110) : User saved to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-06-03T17:23:44,629 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/680/enrkpyc1/xhr_send Request duration: 14ms
+2025-06-03T17:23:44,771 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ws/680/enrkpyc1/xhr_send Request duration: 6ms
+2025-06-03T17:23:55,981 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:234) : All advertisements retrieving...
+2025-06-03T17:23:55,990 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:249) : All advertisements retrieved
+2025-06-03T17:23:55,999 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/getAll Request duration: 19ms
+2025-06-03T17:24:35,459 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:28) : Getting all configurations
+2025-06-03T17:24:35,462 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-06-03T17:24:35,462 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-06-03T17:24:35,470 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/configuration/getConfig Request duration: 12ms
+2025-06-03T17:24:35,607 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.controller.CategoryController(CategoryController.java:32) : All categories retrieved
+2025-06-03T17:24:35,610 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.service.CategoryService(CategoryService.java:24) : Getting all categories
+2025-06-03T17:24:35,615 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:39) : getErrorConfig all configurations
+2025-06-03T17:24:35,615 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:56) : ConfigurationService getErrorConfig
+2025-06-03T17:24:35,622 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/configuration/getErrorConfig Request duration: 9ms
+2025-06-03T17:24:35,627 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/category/getAllCategories Request duration: 21ms
+2025-06-03T17:24:35,716 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:234) : All advertisements retrieving...
+2025-06-03T17:24:35,728 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:249) : All advertisements retrieved
+2025-06-03T17:24:35,730 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/getAll Request duration: 15ms
+2025-06-03T17:24:38,665 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:234) : All advertisements retrieving...
+2025-06-03T17:24:38,678 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:249) : All advertisements retrieved
+2025-06-03T17:24:38,680 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/api/advertisement/getAll Request duration: 15ms
+2025-06-03T17:26:05,876 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 55ms
+2025-06-03T17:26:05,958 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/js/main.4e416a8b.js Request duration: 36ms
+2025-06-03T17:26:05,995 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/css/main.f029a054.css Request duration: 8ms
+2025-06-03T17:26:06,338 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 17ms
+2025-06-03T17:27:57,881 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 14ms
+2025-06-03T17:28:24,135 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.env Request duration: 30ms
+2025-06-03T17:28:25,463 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 11ms
+2025-06-03T17:49:29,187 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 16ms
+2025-06-03T17:49:54,662 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 8ms
+2025-06-03T17:49:55,070 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/logo192.png Request duration: 4ms
+2025-06-03T19:00:37,737 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 13ms
+2025-06-03T19:00:38,029 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/js/main.4e416a8b.js Request duration: 17ms
+2025-06-03T19:00:39,066 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/manifest.json Request duration: 5ms
+2025-06-03T19:08:44,872 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 5ms
+2025-06-03T19:18:18,950 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/logo192.png Request duration: 5ms
+2025-06-03T19:18:19,090 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 5ms
+2025-06-03T19:18:19,239 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 14ms
+2025-06-03T19:21:22,467 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application Request duration: 14ms
+2025-06-03T19:27:59,875 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 10ms
+2025-06-03T19:29:25,769 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 9ms
+2025-06-03T19:35:20,863 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/support Request duration: 9ms
+2025-06-03T19:35:20,919 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/js/main.4e416a8b.js Request duration: 17ms
+2025-06-03T19:35:20,991 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/css/main.f029a054.css Request duration: 5ms
+2025-06-03T19:35:21,379 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 3ms
+2025-06-03T19:45:29,004 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/v1/ Request duration: 13ms
+2025-06-03T20:05:46,944 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 12ms
+2025-06-03T20:06:27,116 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 10ms
+2025-06-03T20:21:26,434 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.env Request duration: 9ms
+2025-06-03T20:21:26,888 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 1ms
+2025-06-03T20:23:40,695 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 14ms
+2025-06-03T20:23:40,879 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 3ms
+2025-06-03T21:08:09,815 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/app-ads.txt Request duration: 5ms
+2025-06-03T21:23:17,997 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/robots.txt Request duration: 7ms
+2025-06-03T21:23:21,400 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/app-ads.txt Request duration: 3ms
+2025-06-03T21:28:13,406 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 15ms
+2025-06-03T21:28:13,450 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/css/main.f029a054.css Request duration: 5ms
+2025-06-03T21:28:13,775 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 16ms
+2025-06-03T21:28:13,805 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/logo192.png Request duration: 8ms
+2025-06-03T21:28:13,840 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/js/twint_ch.js Request duration: 8ms
+2025-06-03T21:28:13,884 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/js/lkk_ch.js Request duration: 7ms
+2025-06-03T21:28:13,939 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/js/main.4e416a8b.js Request duration: 18ms
+2025-06-03T21:28:14,675 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/manifest.json Request duration: 4ms
+2025-06-03T21:31:52,219 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 8ms
+2025-06-03T21:31:52,260 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/js/lkk_ch.js Request duration: 6ms
+2025-06-03T21:31:52,306 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 14ms
+2025-06-03T21:31:52,345 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/manifest.json Request duration: 5ms
+2025-06-03T21:31:52,385 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/css/main.f029a054.css Request duration: 5ms
+2025-06-03T21:31:52,451 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/logo192.png Request duration: 3ms
+2025-06-03T21:31:52,502 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/js/main.4e416a8b.js Request duration: 16ms
+2025-06-03T21:31:52,735 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/js/twint_ch.js Request duration: 13ms
+2025-06-03T22:29:23,315 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 11ms
+2025-06-03T22:29:23,348 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/favicon.ico Request duration: 3ms
+2025-06-03T22:29:23,391 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/css/main.f029a054.css Request duration: 7ms
+2025-06-03T22:29:23,470 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/js/twint_ch.js Request duration: 11ms
+2025-06-03T22:29:23,520 INFO   --- [http-nio-1453-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/static/js/main.4e416a8b.js Request duration: 15ms
+2025-06-03T22:29:24,031 INFO   --- [http-nio-1453-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/js/lkk_ch.js Request duration: 6ms
+2025-06-03T22:29:24,076 INFO   --- [http-nio-1453-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/logo192.png Request duration: 5ms
+2025-06-03T22:29:24,114 INFO   --- [http-nio-1453-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/manifest.json Request duration: 3ms
+2025-06-03T22:50:26,155 INFO   --- [http-nio-1453-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 15ms
+2025-06-03T23:09:03,121 INFO   --- [http-nio-1453-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 11ms
+2025-06-03T23:11:53,087 INFO   --- [http-nio-1453-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/.env Request duration: 7ms
+2025-06-03T23:11:54,132 INFO   --- [http-nio-1453-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 1ms
+2025-06-03T23:21:02,014 INFO   --- [http-nio-1453-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/app-ads.txt Request duration: 7ms
+2025-06-03T23:45:48,311 INFO   --- [http-nio-1453-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 172.17.0.1 && URI :/ Request duration: 11ms
+2025-06-04T00:00:00,002 INFO   --- [MessageBroker-1] com.SwapifyBe.service.SubscriptionService(SubscriptionService.java:80) : Checking expired subscriptions
+2025-06-04T00:00:00,013 INFO   --- [MessageBroker-1] com.SwapifyBe.dao.subscription.SubscriptionDaoImpl(SubscriptionDaoImpl.java:49) : Expired subscriptions found
+2025-06-04T00:00:00,014 INFO   --- [MessageBroker-1] com.SwapifyBe.service.SubscriptionService(SubscriptionService.java:82) : Expired subscriptions found: []
