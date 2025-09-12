@@ -1,0 +1,444 @@
+2025-09-12T03:08:03,483 INFO   --- [main] org.hibernate.jpa.internal.util.LogHelper(LogHelper.java:31) : HHH000204: Processing PersistenceUnitInfo [name: myPersistenceUnit]
+2025-09-12T03:08:03,523 INFO   --- [main] org.hibernate.Version(Version.java:44) : HHH000412: Hibernate ORM core version 6.2.7.Final
+2025-09-12T03:08:03,524 INFO   --- [main] org.hibernate.cfg.Environment(Environment.java:191) : HHH000406: Using bytecode reflection optimizer
+2025-09-12T03:08:03,526 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:690) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.user], use [jakarta.persistence.jdbc.user] instead
+2025-09-12T03:08:03,526 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:712) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.password], use [jakarta.persistence.jdbc.password] instead
+2025-09-12T03:08:03,527 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:1027) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.url], use [jakarta.persistence.jdbc.url] instead
+2025-09-12T03:08:03,527 WARN   --- [main] org.hibernate.orm.deprecation(EntityManagerFactoryBuilderImpl.java:1034) : HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.driver], use [jakarta.persistence.jdbc.driver] instead
+2025-09-12T03:08:03,919 INFO   --- [main] org.hibernate.bytecode.internal.BytecodeProviderInitiator(BytecodeProviderInitiator.java:53) : HHH000021: Bytecode provider name : bytebuddy
+2025-09-12T03:08:04,405 WARN   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:80) : HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-12T03:08:04,407 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:139) : HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-09-12T03:08:04,407 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:161) : HHH10001012: Connecting with JDBC URL [jdbc:postgresql://34.245.38.121:5432/swapiffy]
+2025-09-12T03:08:04,408 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:170) : HHH10001001: Connection properties: {password=****, user=Kemal}
+2025-09-12T03:08:04,408 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:174) : HHH10001003: Autocommit mode: false
+2025-09-12T03:08:04,409 INFO   --- [main] org.hibernate.orm.connections.pooling(DriverManagerConnectionProviderImpl.java:366) : HHH10001115: Connection pool size: 20 (min=1)
+2025-09-12T03:08:05,094 INFO   --- [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator(JtaPlatformInitiator.java:51) : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-09-12T03:08:05,432 INFO   --- [main] org.hibernate.orm.connections.access(DdlTransactionIsolatorNonJtaImpl.java:52) : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@603042a5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-09-12T03:08:13,403 INFO   --- [main] com.SwapifyBe.dao.category.CategoryDaoImpl(CategoryDaoImpl.java:18) : Initializing CategoryDaoImpl
+2025-09-12T03:08:14,819 INFO   --- [main] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:21) : Initializing ConfigurationDaoImpl
+2025-09-12T03:08:14,820 INFO   --- [main] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:23) : ConfigurationService created
+2025-09-12T03:08:14,821 INFO   --- [main] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-09-12T03:08:14,821 INFO   --- [main] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-09-12T03:08:18,006 INFO   --- [main] com.SwapifyBe.dao.auth.AuthDaoImpl(AuthDaoImpl.java:16) : Initializing AuthDaoImpl
+2025-09-12T03:08:18,008 INFO   --- [main] com.SwapifyBe.dao.advertisement.AdvertisementDaoImpl(AdvertisementDaoImpl.java:23) : Advertisement dao implementation is initializing
+2025-09-12T03:08:18,010 INFO   --- [main] com.SwapifyBe.dao.favorite.FavoritesDaoImpl(FavoritesDaoImpl.java:20) : Favorites dao implementation is initializing
+2025-09-12T03:08:18,011 INFO   --- [main] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:20) : Offer dao implementation is initializing
+2025-09-12T03:08:18,013 INFO   --- [main] com.SwapifyBe.dao.follower.FollowerDaoImpl(FollowerDaoImpl.java:20) : Followers dao implementation is initializing
+2025-09-12T03:08:18,014 INFO   --- [main] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:21) : User dao implementation is initializing
+2025-09-12T03:08:18,015 INFO   --- [main] com.SwapifyBe.dao.message.MessageDaoImpl(MessageDaoImpl.java:19) : Message dao implementation is initializing
+2025-09-12T03:08:18,016 INFO   --- [main] com.SwapifyBe.dao.user.UserDaoImpl(UserChatDaoImpl.java:20) : UserChatDaoImpl  implementation is initializing
+2025-09-12T03:08:18,017 INFO   --- [main] com.SwapifyBe.dao.BaseDao(BaseDao.java:25) : BaseDao initialized
+2025-09-12T03:08:18,020 INFO   --- [main] com.SwapifyBe.notification.PushMessage(PushMessage.java:54) : FirebaseApp initializing...
+2025-09-12T03:08:18,128 INFO   --- [main] com.SwapifyBe.notification.PushMessage(PushMessage.java:68) : FirebaseApp initialized
+2025-09-12T03:08:18,128 INFO   --- [main] com.SwapifyBe.service.NotificationService(NotificationService.java:25) : Initializing NotificationService
+2025-09-12T03:08:18,129 INFO   --- [main] com.SwapifyBe.service.SmsService(SmsService.java:33) : SmsService created
+2025-09-12T03:08:18,130 INFO   --- [main] com.SwapifyBe.service.CategoryService(CategoryService.java:19) : CategoryService created
+2025-09-12T03:08:18,130 INFO   --- [main] com.SwapifyBe.service.UserPermissionsService(UserPermissionsService.java:23) : UserPermissionsService created
+2025-09-12T03:08:18,131 INFO   --- [main] com.SwapifyBe.service.UserService(UserService.java:41) : Initializing UserService
+2025-09-12T03:08:18,133 INFO   --- [main] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:64) : Initializing AdvertisementService
+2025-09-12T03:08:18,134 INFO   --- [main] com.SwapifyBe.service.AuthService(AuthService.java:54) : Initializing AuthService
+2025-09-12T03:08:18,135 INFO   --- [main] com.SwapifyBe.service.FavoriteService(FavoriteService.java:37) : Initializing FavoriteService
+2025-09-12T03:08:18,136 INFO   --- [main] com.SwapifyBe.service.OfferService(OfferService.java:56) : Initializing OfferService
+2025-09-12T03:08:18,137 INFO   --- [main] com.SwapifyBe.service.MessageResendService(MessageResendService.java:25) : MessageResendService created
+2025-09-12T03:08:18,137 INFO   --- [main] com.SwapifyBe.service.AppLogService(AppLogService.java:49) : AppLogService created
+2025-09-12T03:08:18,137 INFO   --- [main] com.SwapifyBe.service.VideoService(VideoService.java:19) : Video Service created
+2025-09-12T03:08:18,138 INFO   --- [main] com.SwapifyBe.service.TokenService(TokenService.java:28) : Token Service created
+2025-09-12T03:08:18,138 INFO   --- [main] com.SwapifyBe.service.MessageService(MessageService.java:48) : MessageService created
+2025-09-12T03:08:18,139 INFO   --- [main] com.SwapifyBe.service.FollowerService(FollowerService.java:48) : FollowerService created
+2025-09-12T03:08:18,139 INFO   --- [main] com.SwapifyBe.service.OfferService(SearchService.java:28) : Initializing SearchService
+2025-09-12T03:08:18,141 INFO   --- [main] com.SwapifyBe.service.SubscriptionService(SubscriptionService.java:42) : SubscriptionService created
+2025-09-12T03:08:18,143 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:48) : Services started successfully
+2025-09-12T03:08:18,427 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(StartupInfoLogger.java:53) : Starting SwapifyBeApplication using Java 21.0.8 with PID 45077 (/Users/furkanaydin/Projeler/Backend/SwapifyBe/target/classes started by furkanaydin in /Users/furkanaydin/Projeler/Backend/SwapifyBe)
+2025-09-12T03:08:18,429 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SpringApplication.java:652) : No active profile set, falling back to 1 default profile: "default"
+2025-09-12T03:08:19,470 INFO   --- [main] org.apache.coyote.http11.Http11NioProtocol(DirectJDKLog.java:173) : Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-12T03:08:19,471 INFO   --- [main] org.apache.catalina.core.StandardService(DirectJDKLog.java:173) : Starting service [Tomcat]
+2025-09-12T03:08:19,471 INFO   --- [main] org.apache.catalina.core.StandardEngine(DirectJDKLog.java:173) : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-09-12T03:08:19,501 INFO   --- [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](DirectJDKLog.java:173) : Initializing Spring embedded WebApplicationContext
+2025-09-12T03:08:20,048 INFO   --- [main] com.SwapifyBe.controller.AppLogController(AppLogController.java:28) : AppLogController created
+2025-09-12T03:08:20,060 INFO   --- [main] com.SwapifyBe.controller.CategoryController(CategoryController.java:26) : CategoryController created
+2025-09-12T03:08:20,061 INFO   --- [main] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:22) : ConfigurationController created
+2025-09-12T03:08:20,098 INFO   --- [main] com.SwapifyBe.controller.FavoriteController(FavoriteController.java:30) : FavoriteController created
+2025-09-12T03:08:20,099 INFO   --- [main] com.SwapifyBe.controller.FollowerController(FollowerController.java:20) : FollowerController created
+2025-09-12T03:08:20,100 INFO   --- [main] com.SwapifyBe.service.FollowerService(FollowerService.java:48) : FollowerService created
+2025-09-12T03:08:20,101 INFO   --- [main] com.SwapifyBe.controller.MessageController(MessageController.java:25) : Message Controller created
+2025-09-12T03:08:20,102 INFO   --- [main] com.SwapifyBe.controller.NotificationController(NotificationController.java:22) : NotificationController created
+2025-09-12T03:08:20,103 INFO   --- [main] com.SwapifyBe.controller.OfferController(OfferController.java:27) : OfferController initialized
+2025-09-12T03:08:20,106 INFO   --- [main] com.SwapifyBe.controller.PaymentController(PaymentController.java:22) : Payment Controller created
+2025-09-12T03:08:20,107 INFO   --- [main] com.SwapifyBe.controller.SearchController(SearchController.java:23) : SearchController created
+2025-09-12T03:08:20,108 INFO   --- [main] com.SwapifyBe.controller.SubscriptionController(SubscriptionController.java:41) : SubscriptionController created
+2025-09-12T03:08:20,109 INFO   --- [main] com.SwapifyBe.controller.TokenController(TokenController.java:24) : Token Controller created
+2025-09-12T03:08:20,111 INFO   --- [main] com.SwapifyBe.controller.UserController(UserController.java:33) : UserController created
+2025-09-12T03:08:20,112 INFO   --- [main] com.SwapifyBe.controller.VideoController(VideoController.java:22) : Video Controller created
+2025-09-12T03:08:21,083 INFO   --- [main] org.apache.coyote.http11.Http11NioProtocol(DirectJDKLog.java:173) : Starting ProtocolHandler ["http-nio-8080"]
+2025-09-12T03:08:21,103 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(StartupInfoLogger.java:59) : Started SwapifyBeApplication in 2.911 seconds (process running for 19.345)
+2025-09-12T03:08:21,107 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:71) : Application started event
+2025-09-12T03:08:21,109 INFO   --- [main] com.SwapifyBe.SwapifyBeApplication(SwapifyBeApplication.java:61) : Application ready event
+2025-09-12T03:08:35,780 INFO   --- [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](DirectJDKLog.java:173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-12T03:08:35,905 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:39) : getErrorConfig all configurations
+2025-09-12T03:08:35,905 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.controller.CategoryController(CategoryController.java:32) : All categories retrieved
+2025-09-12T03:08:35,905 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:56) : ConfigurationService getErrorConfig
+2025-09-12T03:08:35,906 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.service.CategoryService(CategoryService.java:24) : Getting all categories
+2025-09-12T03:08:35,908 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:28) : Getting all configurations
+2025-09-12T03:08:35,909 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-09-12T03:08:35,909 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-09-12T03:08:36,180 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getConfig Request duration: 295ms
+2025-09-12T03:08:36,696 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/category/getAllCategories Request duration: 812ms
+2025-09-12T03:08:37,283 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getErrorConfig Request duration: 1398ms
+2025-09-12T03:08:37,304 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:08:37,335 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:08:37,343 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.controller.NotificationController(NotificationController.java:28) : Getting notifications
+2025-09-12T03:08:37,346 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.service.OfferService(OfferService.java:216) : Fetching sent offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:37,346 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:59) : Getting FCM token from Hazelcast for ID: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:37,346 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:68) : Getting offers from the database
+2025-09-12T03:08:37,382 INFO   --- [http-nio-8080-exec-6] com.hazelcast.internal.partition.impl.PartitionStateManager(StandardLoggerFactory.java:56) : [192.168.1.102]:5701 [dev] [5.3.7] Initializing cluster partition table arrangement...
+2025-09-12T03:08:37,633 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/message/getChatUsers Request duration: 308ms
+2025-09-12T03:08:37,639 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.OfferService(OfferService.java:219) : Fetching received offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:37,640 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:87) : Getting offers from the database
+2025-09-12T03:08:37,723 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:93) : Offers retrieved from the database
+2025-09-12T03:08:37,806 WARN   --- [http-nio-8080-exec-10] com.SwapifyBe.service.OfferService(OfferService.java:193) : No offers found for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:37,806 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:37,808 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 170ms
+2025-09-12T03:08:37,815 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:208) : getAllAdvertisementUserId retrieving...
+2025-09-12T03:08:38,124 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/notification/getNotifications Request duration: 792ms
+2025-09-12T03:08:38,162 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/get Request duration: 348ms
+2025-09-12T03:08:38,501 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollower Request duration: 333ms
+2025-09-12T03:08:38,716 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/alreadyExistsHazelcastFcmToken Request duration: 1387ms
+2025-09-12T03:08:38,847 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollowing Request duration: 337ms
+2025-09-12T03:08:38,886 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:08:38,890 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1558ms
+2025-09-12T03:08:38,893 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/getFcmToken Request duration: 160ms
+2025-09-12T03:08:38,973 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:08:38,975 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1676ms
+2025-09-12T03:08:39,062 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:50) : Saving FCM token to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:08:39,074 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:53) : FCM token saved to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:08:39,075 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/updateFcmToken Request duration: 176ms
+2025-09-12T03:08:39,216 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:08:39,384 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:74) : Offers retrieved from the database
+2025-09-12T03:08:39,467 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:39,473 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 2141ms
+2025-09-12T03:08:40,451 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/getAllFavorite Request duration: 2320ms
+2025-09-12T03:08:40,785 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:08:40,788 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1574ms
+2025-09-12T03:08:49,751 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:39) : getErrorConfig all configurations
+2025-09-12T03:08:49,760 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:56) : ConfigurationService getErrorConfig
+2025-09-12T03:08:49,758 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:08:49,752 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:28) : Getting all configurations
+2025-09-12T03:08:49,751 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.controller.CategoryController(CategoryController.java:32) : All categories retrieved
+2025-09-12T03:08:49,763 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-09-12T03:08:49,773 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.CategoryService(CategoryService.java:24) : Getting all categories
+2025-09-12T03:08:49,774 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-09-12T03:08:49,776 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:59) : Getting FCM token from Hazelcast for ID: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:49,812 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/alreadyExistsHazelcastFcmToken Request duration: 64ms
+2025-09-12T03:08:49,825 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.controller.NotificationController(NotificationController.java:28) : Getting notifications
+2025-09-12T03:08:49,938 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/category/getAllCategories Request duration: 190ms
+2025-09-12T03:08:49,943 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.service.OfferService(OfferService.java:216) : Fetching sent offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:49,943 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:68) : Getting offers from the database
+2025-09-12T03:08:49,947 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getErrorConfig Request duration: 198ms
+2025-09-12T03:08:49,950 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getConfig Request duration: 203ms
+2025-09-12T03:08:49,954 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.service.OfferService(OfferService.java:219) : Fetching received offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:49,954 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:87) : Getting offers from the database
+2025-09-12T03:08:49,957 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:208) : getAllAdvertisementUserId retrieving...
+2025-09-12T03:08:49,991 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/notification/getNotifications Request duration: 167ms
+2025-09-12T03:08:50,040 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/message/getChatUsers Request duration: 284ms
+2025-09-12T03:08:50,044 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:93) : Offers retrieved from the database
+2025-09-12T03:08:50,127 WARN   --- [http-nio-8080-exec-1] com.SwapifyBe.service.OfferService(OfferService.java:193) : No offers found for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:50,128 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:50,131 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 178ms
+2025-09-12T03:08:50,197 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:74) : Offers retrieved from the database
+2025-09-12T03:08:50,276 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:50,281 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 339ms
+2025-09-12T03:08:50,302 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/get Request duration: 345ms
+2025-09-12T03:08:50,308 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:08:50,444 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollower Request duration: 336ms
+2025-09-12T03:08:50,447 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/getFcmToken Request duration: 157ms
+2025-09-12T03:08:50,496 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollowing Request duration: 348ms
+2025-09-12T03:08:50,759 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:50) : Saving FCM token to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:08:50,760 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:53) : FCM token saved to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:08:50,761 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/updateFcmToken Request duration: 283ms
+2025-09-12T03:08:51,428 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:08:51,431 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1684ms
+2025-09-12T03:08:52,019 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:08:52,023 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1718ms
+2025-09-12T03:08:52,415 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/getAllFavorite Request duration: 2377ms
+2025-09-12T03:08:54,468 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:39) : getErrorConfig all configurations
+2025-09-12T03:08:54,468 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:28) : Getting all configurations
+2025-09-12T03:08:54,468 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:56) : ConfigurationService getErrorConfig
+2025-09-12T03:08:54,468 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.controller.CategoryController(CategoryController.java:32) : All categories retrieved
+2025-09-12T03:08:54,468 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-09-12T03:08:54,469 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-09-12T03:08:54,469 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.CategoryService(CategoryService.java:24) : Getting all categories
+2025-09-12T03:08:54,632 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getConfig Request duration: 165ms
+2025-09-12T03:08:54,641 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/category/getAllCategories Request duration: 174ms
+2025-09-12T03:08:54,642 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getErrorConfig Request duration: 175ms
+2025-09-12T03:08:54,655 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:08:54,677 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:59) : Getting FCM token from Hazelcast for ID: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:54,686 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.service.OfferService(OfferService.java:216) : Fetching sent offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:54,688 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/alreadyExistsHazelcastFcmToken Request duration: 17ms
+2025-09-12T03:08:54,690 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:68) : Getting offers from the database
+2025-09-12T03:08:54,692 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:08:54,693 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.controller.NotificationController(NotificationController.java:28) : Getting notifications
+2025-09-12T03:08:54,693 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.OfferService(OfferService.java:219) : Fetching received offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:54,693 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:87) : Getting offers from the database
+2025-09-12T03:08:54,777 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:93) : Offers retrieved from the database
+2025-09-12T03:08:54,856 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/notification/getNotifications Request duration: 164ms
+2025-09-12T03:08:54,860 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:208) : getAllAdvertisementUserId retrieving...
+2025-09-12T03:08:54,862 WARN   --- [http-nio-8080-exec-5] com.SwapifyBe.service.OfferService(OfferService.java:193) : No offers found for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:54,862 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:54,864 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 171ms
+2025-09-12T03:08:54,910 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/message/getChatUsers Request duration: 236ms
+2025-09-12T03:08:54,941 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:74) : Offers retrieved from the database
+2025-09-12T03:08:55,022 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:08:55,023 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 339ms
+2025-09-12T03:08:55,187 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/get Request duration: 327ms
+2025-09-12T03:08:55,236 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollower Request duration: 322ms
+2025-09-12T03:08:55,356 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollowing Request duration: 330ms
+2025-09-12T03:08:55,356 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/getFcmToken Request duration: 165ms
+2025-09-12T03:08:55,527 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:50) : Saving FCM token to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:08:55,531 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:53) : FCM token saved to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:08:55,532 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/updateFcmToken Request duration: 165ms
+2025-09-12T03:08:56,235 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:08:56,239 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1587ms
+2025-09-12T03:08:56,254 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:08:56,261 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1577ms
+2025-09-12T03:08:56,519 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:08:57,175 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/getAllFavorite Request duration: 2306ms
+2025-09-12T03:08:58,069 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:08:58,073 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1557ms
+2025-09-12T03:09:29,782 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.controller.CategoryController(CategoryController.java:32) : All categories retrieved
+2025-09-12T03:09:29,782 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:39) : getErrorConfig all configurations
+2025-09-12T03:09:29,783 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:28) : Getting all configurations
+2025-09-12T03:09:29,783 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-09-12T03:09:29,783 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-09-12T03:09:29,784 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:56) : ConfigurationService getErrorConfig
+2025-09-12T03:09:29,792 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.service.CategoryService(CategoryService.java:24) : Getting all categories
+2025-09-12T03:09:29,953 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getConfig Request duration: 174ms
+2025-09-12T03:09:29,966 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getErrorConfig Request duration: 185ms
+2025-09-12T03:09:29,966 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/category/getAllCategories Request duration: 186ms
+2025-09-12T03:09:29,981 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:09:30,016 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:59) : Getting FCM token from Hazelcast for ID: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:09:30,018 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.controller.NotificationController(NotificationController.java:28) : Getting notifications
+2025-09-12T03:09:30,024 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:09:30,024 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.OfferService(OfferService.java:216) : Fetching sent offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:09:30,024 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:68) : Getting offers from the database
+2025-09-12T03:09:30,028 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/alreadyExistsHazelcastFcmToken Request duration: 14ms
+2025-09-12T03:09:30,032 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.service.OfferService(OfferService.java:219) : Fetching received offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:09:30,033 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:87) : Getting offers from the database
+2025-09-12T03:09:30,124 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:93) : Offers retrieved from the database
+2025-09-12T03:09:30,191 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/notification/getNotifications Request duration: 174ms
+2025-09-12T03:09:30,195 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:208) : getAllAdvertisementUserId retrieving...
+2025-09-12T03:09:30,208 WARN   --- [http-nio-8080-exec-7] com.SwapifyBe.service.OfferService(OfferService.java:193) : No offers found for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:09:30,208 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:09:30,209 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 178ms
+2025-09-12T03:09:30,259 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/message/getChatUsers Request duration: 260ms
+2025-09-12T03:09:30,267 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:74) : Offers retrieved from the database
+2025-09-12T03:09:30,345 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:09:30,348 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 326ms
+2025-09-12T03:09:30,521 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/get Request duration: 326ms
+2025-09-12T03:09:30,597 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollower Request duration: 333ms
+2025-09-12T03:09:30,668 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollowing Request duration: 314ms
+2025-09-12T03:09:30,697 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/getFcmToken Request duration: 170ms
+2025-09-12T03:09:30,859 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:50) : Saving FCM token to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:09:30,860 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:53) : FCM token saved to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:09:30,862 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/updateFcmToken Request duration: 160ms
+2025-09-12T03:09:31,521 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:09:31,524 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1546ms
+2025-09-12T03:09:31,565 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:09:31,568 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1546ms
+2025-09-12T03:09:31,767 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:09:32,528 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/getAllFavorite Request duration: 2315ms
+2025-09-12T03:09:33,322 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:09:33,327 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1564ms
+2025-09-12T03:09:44,663 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/delete Request duration: 877ms
+2025-09-12T03:09:45,335 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/delete Request duration: 724ms
+2025-09-12T03:09:55,190 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:28) : Getting all configurations
+2025-09-12T03:09:55,190 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:39) : getErrorConfig all configurations
+2025-09-12T03:09:55,190 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.controller.CategoryController(CategoryController.java:32) : All categories retrieved
+2025-09-12T03:09:55,191 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.CategoryService(CategoryService.java:24) : Getting all categories
+2025-09-12T03:09:55,191 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:56) : ConfigurationService getErrorConfig
+2025-09-12T03:09:55,194 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-09-12T03:09:55,194 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-09-12T03:09:55,367 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getErrorConfig Request duration: 180ms
+2025-09-12T03:09:55,366 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/category/getAllCategories Request duration: 179ms
+2025-09-12T03:09:55,370 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getConfig Request duration: 183ms
+2025-09-12T03:09:55,385 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:09:55,410 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:59) : Getting FCM token from Hazelcast for ID: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:09:55,414 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/alreadyExistsHazelcastFcmToken Request duration: 13ms
+2025-09-12T03:09:55,416 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:09:55,416 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.controller.NotificationController(NotificationController.java:28) : Getting notifications
+2025-09-12T03:09:55,416 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.OfferService(OfferService.java:216) : Fetching sent offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:09:55,416 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:68) : Getting offers from the database
+2025-09-12T03:09:55,420 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.service.OfferService(OfferService.java:219) : Fetching received offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:09:55,421 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:87) : Getting offers from the database
+2025-09-12T03:09:55,505 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:93) : Offers retrieved from the database
+2025-09-12T03:09:55,580 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/notification/getNotifications Request duration: 165ms
+2025-09-12T03:09:55,583 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:208) : getAllAdvertisementUserId retrieving...
+2025-09-12T03:09:55,589 WARN   --- [http-nio-8080-exec-1] com.SwapifyBe.service.OfferService(OfferService.java:193) : No offers found for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:09:55,589 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:09:55,590 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 171ms
+2025-09-12T03:09:55,658 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/message/getChatUsers Request duration: 258ms
+2025-09-12T03:09:55,658 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:74) : Offers retrieved from the database
+2025-09-12T03:09:55,737 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:09:55,738 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 323ms
+2025-09-12T03:09:55,906 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/get Request duration: 323ms
+2025-09-12T03:09:55,995 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollower Request duration: 333ms
+2025-09-12T03:09:56,067 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollowing Request duration: 326ms
+2025-09-12T03:09:56,084 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/getFcmToken Request duration: 172ms
+2025-09-12T03:09:56,255 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:50) : Saving FCM token to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:09:56,260 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:53) : FCM token saved to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:09:56,261 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/updateFcmToken Request duration: 167ms
+2025-09-12T03:09:56,908 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:09:56,909 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1526ms
+2025-09-12T03:09:56,973 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:09:56,977 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1563ms
+2025-09-12T03:09:57,137 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:09:57,482 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/getAllFavorite Request duration: 1888ms
+2025-09-12T03:09:58,802 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:09:58,810 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1678ms
+2025-09-12T03:09:59,780 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:230) : getAdvertisementUserId retrieving...
+2025-09-12T03:10:00,111 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:236) : getAdvertisementUserId retrieved
+2025-09-12T03:10:00,130 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.UserService(UserService.java:51) : Getting user
+2025-09-12T03:10:00,132 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:26) : Getting user from the database
+2025-09-12T03:10:00,309 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:32) : User retrieved from the database
+2025-09-12T03:10:00,320 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.UserService(UserService.java:59) : User retrieved
+2025-09-12T03:10:01,076 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.FavoriteService(FavoriteService.java:66) : Ürün favorilere eklendi.
+2025-09-12T03:10:01,100 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/add Request duration: 1323ms
+2025-09-12T03:10:10,219 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/delete Request duration: 753ms
+2025-09-12T03:10:11,491 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/delete Request duration: 735ms
+2025-09-12T03:10:12,712 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/delete Request duration: 760ms
+2025-09-12T03:10:17,712 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/delete Request duration: 749ms
+2025-09-12T03:10:18,867 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/delete Request duration: 756ms
+2025-09-12T03:10:38,853 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:39) : getErrorConfig all configurations
+2025-09-12T03:10:38,853 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.controller.CategoryController(CategoryController.java:32) : All categories retrieved
+2025-09-12T03:10:38,853 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:28) : Getting all configurations
+2025-09-12T03:10:38,853 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.service.CategoryService(CategoryService.java:24) : Getting all categories
+2025-09-12T03:10:38,853 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:56) : ConfigurationService getErrorConfig
+2025-09-12T03:10:38,854 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-09-12T03:10:38,854 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-09-12T03:10:39,044 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/category/getAllCategories Request duration: 196ms
+2025-09-12T03:10:39,045 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getConfig Request duration: 197ms
+2025-09-12T03:10:39,045 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getErrorConfig Request duration: 195ms
+2025-09-12T03:10:39,071 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:10:39,097 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:59) : Getting FCM token from Hazelcast for ID: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:10:39,097 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.OfferService(OfferService.java:216) : Fetching sent offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:10:39,097 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:68) : Getting offers from the database
+2025-09-12T03:10:39,098 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.controller.NotificationController(NotificationController.java:28) : Getting notifications
+2025-09-12T03:10:39,099 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/alreadyExistsHazelcastFcmToken Request duration: 3ms
+2025-09-12T03:10:39,146 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:10:39,160 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.OfferService(OfferService.java:219) : Fetching received offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:10:39,160 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:87) : Getting offers from the database
+2025-09-12T03:10:39,281 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:93) : Offers retrieved from the database
+2025-09-12T03:10:39,286 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/notification/getNotifications Request duration: 189ms
+2025-09-12T03:10:39,295 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:208) : getAllAdvertisementUserId retrieving...
+2025-09-12T03:10:39,365 WARN   --- [http-nio-8080-exec-10] com.SwapifyBe.service.OfferService(OfferService.java:193) : No offers found for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:10:39,365 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:10:39,367 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 210ms
+2025-09-12T03:10:39,367 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/message/getChatUsers Request duration: 275ms
+2025-09-12T03:10:39,368 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:74) : Offers retrieved from the database
+2025-09-12T03:10:39,509 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:10:39,516 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 419ms
+2025-09-12T03:10:39,582 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/getAllFavorite Request duration: 209ms
+2025-09-12T03:10:39,682 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/get Request duration: 387ms
+2025-09-12T03:10:39,745 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollower Request duration: 374ms
+2025-09-12T03:10:39,758 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/getFcmToken Request duration: 170ms
+2025-09-12T03:10:39,899 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollowing Request duration: 355ms
+2025-09-12T03:10:39,924 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:50) : Saving FCM token to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:10:39,925 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:53) : FCM token saved to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:10:39,926 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/updateFcmToken Request duration: 163ms
+2025-09-12T03:10:40,687 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:10:40,694 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1596ms
+2025-09-12T03:10:40,740 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:10:40,743 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1675ms
+2025-09-12T03:10:41,042 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:10:42,687 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:10:42,694 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1657ms
+2025-09-12T03:11:15,063 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:230) : getAdvertisementUserId retrieving...
+2025-09-12T03:11:15,395 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:236) : getAdvertisementUserId retrieved
+2025-09-12T03:11:15,396 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.UserService(UserService.java:51) : Getting user
+2025-09-12T03:11:15,396 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:26) : Getting user from the database
+2025-09-12T03:11:15,566 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.dao.user.UserDaoImpl(UserDaoImpl.java:32) : User retrieved from the database
+2025-09-12T03:11:15,567 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.UserService(UserService.java:59) : User retrieved
+2025-09-12T03:11:16,311 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.FavoriteService(FavoriteService.java:66) : Ürün favorilere eklendi.
+2025-09-12T03:11:16,317 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/add Request duration: 1254ms
+2025-09-12T03:11:26,897 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/delete Request duration: 761ms
+2025-09-12T03:11:53,550 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:28) : Getting all configurations
+2025-09-12T03:11:53,552 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:11:53,551 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:39) : getErrorConfig all configurations
+2025-09-12T03:11:53,552 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-09-12T03:11:53,552 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-09-12T03:11:53,553 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:56) : ConfigurationService getErrorConfig
+2025-09-12T03:11:53,553 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.controller.CategoryController(CategoryController.java:32) : All categories retrieved
+2025-09-12T03:11:53,554 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.service.CategoryService(CategoryService.java:24) : Getting all categories
+2025-09-12T03:11:53,557 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:59) : Getting FCM token from Hazelcast for ID: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:11:53,565 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/alreadyExistsHazelcastFcmToken Request duration: 11ms
+2025-09-12T03:11:53,568 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.controller.NotificationController(NotificationController.java:28) : Getting notifications
+2025-09-12T03:11:53,715 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getErrorConfig Request duration: 169ms
+2025-09-12T03:11:53,719 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/category/getAllCategories Request duration: 167ms
+2025-09-12T03:11:53,723 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.service.OfferService(OfferService.java:216) : Fetching sent offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:11:53,724 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:68) : Getting offers from the database
+2025-09-12T03:11:53,728 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.OfferService(OfferService.java:219) : Fetching received offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:11:53,731 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:87) : Getting offers from the database
+2025-09-12T03:11:53,735 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getConfig Request duration: 197ms
+2025-09-12T03:11:53,740 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/notification/getNotifications Request duration: 172ms
+2025-09-12T03:11:53,745 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:208) : getAllAdvertisementUserId retrieving...
+2025-09-12T03:11:53,810 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:93) : Offers retrieved from the database
+2025-09-12T03:11:53,833 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/message/getChatUsers Request duration: 280ms
+2025-09-12T03:11:53,891 WARN   --- [http-nio-8080-exec-8] com.SwapifyBe.service.OfferService(OfferService.java:193) : No offers found for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:11:53,891 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:11:53,893 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 169ms
+2025-09-12T03:11:53,916 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/getAllFavorite Request duration: 170ms
+2025-09-12T03:11:53,958 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:74) : Offers retrieved from the database
+2025-09-12T03:11:54,035 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:11:54,038 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 315ms
+2025-09-12T03:11:54,054 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:11:54,079 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/get Request duration: 335ms
+2025-09-12T03:11:54,096 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/getFcmToken Request duration: 171ms
+2025-09-12T03:11:54,196 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollower Request duration: 349ms
+2025-09-12T03:11:54,230 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollowing Request duration: 327ms
+2025-09-12T03:11:54,271 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:50) : Saving FCM token to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:11:54,272 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:53) : FCM token saved to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:11:54,273 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/updateFcmToken Request duration: 167ms
+2025-09-12T03:11:55,139 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:11:55,145 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1596ms
+2025-09-12T03:11:55,575 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:11:55,578 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1528ms
+2025-09-12T03:11:56,498 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:28) : Getting all configurations
+2025-09-12T03:11:56,498 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:29) : ConfigurationService findAll
+2025-09-12T03:11:56,499 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.dao.configuration.ConfigurationDaoImpl(ConfigurationDaoImpl.java:26) : Getting all configurations
+2025-09-12T03:11:56,499 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.controller.ConfigurationController(ConfigurationController.java:39) : getErrorConfig all configurations
+2025-09-12T03:11:56,499 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.service.ConfigurationService(ConfigurationService.java:56) : ConfigurationService getErrorConfig
+2025-09-12T03:11:56,524 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.controller.CategoryController(CategoryController.java:32) : All categories retrieved
+2025-09-12T03:11:56,524 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.service.CategoryService(CategoryService.java:24) : Getting all categories
+2025-09-12T03:11:56,525 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:11:56,525 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:59) : Getting FCM token from Hazelcast for ID: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:11:56,545 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/alreadyExistsHazelcastFcmToken Request duration: 7ms
+2025-09-12T03:11:56,580 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.controller.NotificationController(NotificationController.java:28) : Getting notifications
+2025-09-12T03:11:56,661 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getConfig Request duration: 201ms
+2025-09-12T03:11:56,665 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/configuration/getErrorConfig Request duration: 181ms
+2025-09-12T03:11:56,666 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.OfferService(OfferService.java:216) : Fetching sent offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:11:56,666 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:68) : Getting offers from the database
+2025-09-12T03:11:56,669 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.service.OfferService(OfferService.java:219) : Fetching received offers for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:11:56,669 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:87) : Getting offers from the database
+2025-09-12T03:11:56,691 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/category/getAllCategories Request duration: 174ms
+2025-09-12T03:11:56,696 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:208) : getAllAdvertisementUserId retrieving...
+2025-09-12T03:11:56,750 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/notification/getNotifications Request duration: 170ms
+2025-09-12T03:11:56,750 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:93) : Offers retrieved from the database
+2025-09-12T03:11:56,780 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/message/getChatUsers Request duration: 251ms
+2025-09-12T03:11:56,830 WARN   --- [http-nio-8080-exec-2] com.SwapifyBe.service.OfferService(OfferService.java:193) : No offers found for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:11:56,830 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:11:56,831 INFO   --- [http-nio-8080-exec-2] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 163ms
+2025-09-12T03:11:56,901 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.dao.offer.OfferDaoImpl(OfferDaoImpl.java:74) : Offers retrieved from the database
+2025-09-12T03:11:56,929 INFO   --- [http-nio-8080-exec-1] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/favorite/getAllFavorite Request duration: 172ms
+2025-09-12T03:11:56,978 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.service.OfferService(OfferService.java:200) : Offers successfully retrieved for user: 3db865c2-80cf-484b-9a4b-d200753e2bc0
+2025-09-12T03:11:56,979 INFO   --- [http-nio-8080-exec-5] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/offer/getOffers Request duration: 314ms
+2025-09-12T03:11:56,984 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:245) : All advertisements retrieving...
+2025-09-12T03:11:57,034 INFO   --- [http-nio-8080-exec-6] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/get Request duration: 339ms
+2025-09-12T03:11:57,098 INFO   --- [http-nio-8080-exec-4] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/getFcmToken Request duration: 165ms
+2025-09-12T03:11:57,112 INFO   --- [http-nio-8080-exec-8] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollower Request duration: 327ms
+2025-09-12T03:11:57,159 INFO   --- [http-nio-8080-exec-9] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/follower/getFollowing Request duration: 325ms
+2025-09-12T03:11:57,267 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:50) : Saving FCM token to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:11:57,268 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.cache.Hazelcast(Hazelcast.java:53) : FCM token saved to Hazelcast: 3db865c2-80cf-484b-9a4b-d200753e2bc0 - cMwcFhP8GUh0teiyXmcte-:APA91bFBPn7w9_-FiKJ_PpFiEaijyOr59UvFQLP5UFFFnQ8sXuzL2W9PscuFdjFktTbN6VRgk0RAr6LHsiwCLFIelVYg911dzD3pHMAlT8iZR5H5PGwpwzg
+2025-09-12T03:11:57,268 INFO   --- [http-nio-8080-exec-7] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/token/updateFcmToken Request duration: 163ms
+2025-09-12T03:11:58,082 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:11:58,084 INFO   --- [http-nio-8080-exec-10] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1560ms
+2025-09-12T03:11:58,494 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.service.AdvertisementService(AdvertisementService.java:260) : All advertisements retrieved
+2025-09-12T03:11:58,496 INFO   --- [http-nio-8080-exec-3] com.SwapifyBe.filter.JwtAuthenticationFilter(JwtAuthenticationFilter.java:48) : IP : 0:0:0:0:0:0:0:1 && URI :/api/advertisement/getAll Request duration: 1513ms
